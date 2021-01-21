@@ -1,0 +1,15 @@
+.wrap{
+    max-width: 768px;
+    margin: 0 auto;
+}
+.contentsWidth{max-width: 600px; margin: 0 auto; padding: 0 20px; box-sizing: border-box;}
+
+header{height: 114px; background-color: #f2f2f2;}
+header > div{height: 100%; display: flex; align-items: center; }
+header > div button.menuBtn{margin-right: 40px;}
+header > div button.menuBtn span{display: block; width: 33px; height: 4px; background-color: black; border-radius: 200px;}
+header > div button.menuBtn span:not(:last-of-type){margin-bottom: 11px;}
+header > div button:nth-of-type(2){margin-left: auto; margin-right: 36px;}
+header > div h1, header > div h2{font-size: 43px; font-weight: 900;}
+header > div button.noticeBtn{position: relative;}
+header > div button.noticeBtn span{font-size:16px; font-weight: 900; color: white;  position: absolute; right: -13px; top: -13px; width: 27px; height: 27px; display: flex; justify-content: center; align-items: center; border: 3px solid #f2f2f2; border-radius: 100%; background-color: #7e00ff; }
