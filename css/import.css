@@ -3,6 +3,6 @@
 /* 머티리얼 아이콘 */
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
-@import url(reset.css);
-@import url(global.css);
-@import url(page.css);
+@import url('reset.css');
+@import url('global.css');
+@import url('page.css');
