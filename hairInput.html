@@ -33,8 +33,16 @@
                             <label for="woman">여자</label>
                         </li>
                         <li class="test">
-                            <h3>성별</h3>
+                            <h3>탈모부위</h3>
                             <button>도움말</button>
+                            <div class="popupArea">
+                                <div class="userHairPartPopupArea">
+                                    <h4>탈모부위</h4>
+                                    <img src="images/userHairPartImg01.png" alt="">
+                                    <img src="images/userHairPartImg02.png" alt="">
+                                    <button class="popupCloseBtn">팝업 닫기</button>
+                                </div> 
+                            </div>
                             <input type="radio" name="userHairPart" id="userHairPart01">
                             <label for="userHairPart01">이마M자</label>
                             <input type="radio" name="userHairPart" id="userHairPart02">
@@ -53,8 +61,28 @@
                             <label for="userHairPart08">기타</label>
                         </li>
                         <li>
-                            <h3>성별</h3>
+                            <h3>두피타입</h3>
                             <button>도움말</button>
+                            <div class="popupArea active">
+                                <div class="userHairTypePopupArea">
+                                    <h4>두피타입</h4>
+                                    <ul>
+                                        <li>
+                                            <strong>건성</strong>
+                                            모발에 기름이 잘 끼지 않고 푸석푸석하다. 푸피가 건조하며 각질이 많이 일어나는 편이다.
+                                        </li>
+                                        <li>
+                                            <strong>진성</strong>
+                                            모발이 빨리 기름지고 머리를 감아도 오후가 되면 냄새가 난다 피지분비가 많고, 뾰주지가 난다
+                                        </li>
+                                        <li>
+                                            <strong>중성</strong>
+                                            피지분비가 적당하고 두피 색이 투명하여 모발에 윤기가 난다.
+                                        </li>
+                                    </ul>
+                                    <button class="popupCloseBtn">팝업 닫기</button>
+                                </div>
+                            </div>
                             <input type="radio" name="userHairType" id="userHairType01">
                             <label for="userHairType01">진성</label>
                             <input type="radio" name="userHairType" id="userHairType02">

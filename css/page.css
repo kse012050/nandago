@@ -22,28 +22,50 @@
 /* hairInput 내 탈보 정보 입력*/
 .hairInputArea{background-color: #f2f2f2; padding-top: 2.500em; padding-bottom: 3.750em;}
 .hairInputArea fieldset legend{font-size: 2.688em; font-weight: 900; margin-bottom: 1.395em;}
-.hairInputArea fieldset ul li{display: flex; flex-wrap: wrap; position: relative;}
-.hairInputArea fieldset ul li:not(:last-of-type){margin-bottom: 2.500em;}
-.hairInputArea fieldset ul li:last-of-type{margin-bottom:3.438em;}
-.hairInputArea fieldset ul li h3{width: 100%; font-size: 1.625em; font-weight: 900; margin-bottom: 1.154em;}
-.hairInputArea fieldset ul li h3 label{font-weight: 900;}
-.hairInputArea fieldset ul li button{position: absolute; right: 0; top: -0.250em; font-size:1.250em; color: white; width: 5.250em; height: 2.000em; background-color: #9f9f9f; border-radius: 30px;}
-.hairInputArea fieldset ul li input ,
-.hairInputArea fieldset ul li input[type="radio"] + label
+.hairInputArea fieldset > ul > li{display: flex; flex-wrap: wrap; position: relative;}
+.hairInputArea fieldset > ul > li:not(:last-of-type){margin-bottom: 2.500em;}
+.hairInputArea fieldset > ul > li:last-of-type{margin-bottom:3.438em;}
+.hairInputArea fieldset > ul > li h3{width: 100%; font-size: 1.625em; font-weight: 900; margin-bottom: 1.154em;}
+.hairInputArea fieldset > ul > li h3 label{font-weight: 900;}
+.hairInputArea fieldset > ul > li > button{position: absolute; right: 0; top: -0.250em; font-size:1.250em; color: white; width: 5.250em; height: 2.000em; background-color: #9f9f9f; border-radius: 30px;}
+.hairInputArea fieldset > ul > li input ,
+.hairInputArea fieldset > ul > li input[type="radio"] + label
 {flex: 1; font-size: 1.438em; font-weight: 600; height: 2.652em; border-radius: 30px; box-sizing: border-box; border: 2px solid transparent; display: flex; justify-content: center; align-items: center;}
-.hairInputArea fieldset ul li > label{}
-.hairInputArea fieldset ul li input[type="text"]{padding: 0 1.522em; border: none;}
-.hairInputArea fieldset ul li input[type="radio"],
-.hairInputArea fieldset ul li input[type="checkbox"]
+.hairInputArea fieldset > ul > li > label{}
+.hairInputArea fieldset > ul > li input[type="text"]{padding: 0 1.522em; border: none;}
+.hairInputArea fieldset > ul > li input[type="radio"],
+.hairInputArea fieldset > ul > li input[type="checkbox"]
 {display: none}
-.hairInputArea fieldset ul li input[type="radio"] + label{background-color: white;}
-.hairInputArea fieldset ul li input[type="radio"]:checked + label{border-color: #7e00ff;}
-.hairInputArea fieldset ul li input[type="radio"] + label:not(:last-of-type){margin-right: 0.870em;}
-.hairInputArea fieldset ul li.test  input[type="radio"] + label{flex-basis: calc(25% - 0.870em);}
-.hairInputArea fieldset ul li.test  input[type="radio"] + label:nth-of-type(4){margin-right: 0;}
-.hairInputArea fieldset ul li.test  input[type="radio"] + label:nth-last-of-type(n + 5){margin-bottom: 0.565em;}
-.hairInputArea fieldset ul li input[type="checkbox"] + label{width: 100%; font-size: 1.438em; font-weight: 600; display: flex; align-items: center;}
-.hairInputArea fieldset ul li input[type="checkbox"] + label:not(:last-of-type){margin-bottom: 1em;}
-.hairInputArea fieldset ul li input[type="checkbox"] + label::before{content: ''; width:1.609em; height: 1.609em; background-image: url('../images/checkboxIcon01.png'); background-repeat: no-repeat; background-size: cover; margin-right: 0.783em;}
-.hairInputArea fieldset ul li input[type="checkbox"]:checked + label::before{background-image: url('../images/checkboxIcon02.png');}
+.hairInputArea fieldset > ul > li input[type="radio"] + label{background-color: white;}
+.hairInputArea fieldset > ul > li input[type="radio"]:checked + label{border-color: #7e00ff;}
+.hairInputArea fieldset > ul > li input[type="radio"] + label:not(:last-of-type){margin-right: 0.870em;}
+.hairInputArea fieldset > ul > li.test  input[type="radio"] + label{flex-basis: calc(25% - 0.870em);}
+.hairInputArea fieldset > ul > li.test  input[type="radio"] + label:nth-of-type(4){margin-right: 0;}
+.hairInputArea fieldset > ul > li.test  input[type="radio"] + label:nth-last-of-type(n + 5){margin-bottom: 0.565em;}
+.hairInputArea fieldset > ul > li input[type="checkbox"] + label{width: 100%; font-size: 1.438em; font-weight: 600; display: flex; align-items: center;}
+.hairInputArea fieldset > ul > li input[type="checkbox"] + label:not(:last-of-type){margin-bottom: 1em;}
+.hairInputArea fieldset > ul > li input[type="checkbox"] + label::before{content: ''; width:1.609em; height: 1.609em; background-image: url('../images/checkboxIcon01.png'); background-repeat: no-repeat; background-size: cover; margin-right: 0.783em;}
+.hairInputArea fieldset > ul > li input[type="checkbox"]:checked + label::before{background-image: url('../images/checkboxIcon02.png');}
 .hairInputArea fieldset input[type="submit"]{font-size: 1.438em; font-weight: 600; width: 7.739em; height: 2.652em; border: none; border-radius: 30px; display: block; margin: 0 auto; color: white; background-color: #7e00ff;}
+
+/* hairInput 내 탈보 정보 입력 - 팝업 공통*/
+.hairInputArea fieldset .popupArea{justify-content: center; align-items: center;}
+.hairInputArea fieldset .popupArea.active{display: flex;}
+.hairInputArea fieldset .popupArea > div::after{content: ''; display: block; visibility: hidden; clear: both;}
+.hairInputArea fieldset .popupArea > div{width: calc(100% - 40px); max-width: 600px; height: 33.938em; background-color: white; padding: 0 20px; box-sizing: border-box; border-radius: 25px;}
+.hairInputArea fieldset .popupArea > div h4{width: 100%; font-size: 1.875em; font-weight: 900; padding-top: 1.833em;}
+.hairInputArea fieldset .popupArea > div{position: relative;}
+.hairInputArea fieldset .popupArea > div button.popupCloseBtn{right: 2.375em; top: 3.438em;}
+
+.hairInputArea fieldset .popupArea .userHairPartPopupArea h4{margin-bottom: 2.900em;}
+.hairInputArea fieldset .popupArea .userHairTypePopupArea h4{margin-bottom: 1.667em;}
+
+/* 탈모부위 팝업 */
+.hairInputArea fieldset .popupArea > div img{float: left; width: 50%;}
+
+/* 투피타입 팝업 */
+.hairInputArea fieldset .popupArea ul li{font-size: 1.438em; line-height: 1.4782;}
+.hairInputArea fieldset .popupArea ul li strong{font-weight: 900;}
+.hairInputArea fieldset .popupArea ul li strong::before{content: ':'; display: inline-block;}
+.hairInputArea fieldset .popupArea ul li:not(:last-of-type){margin-bottom: 1.739em;}
+
