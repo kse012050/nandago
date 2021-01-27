@@ -17,8 +17,10 @@
         font-size: 2.5vw;
     }
 }
-.contentsWidth{max-width: 767px; margin: 0 auto; padding: 0 20px; box-sizing: border-box;}
-
+.contentsWidth{max-width: 600px; margin: 0 auto; padding: 0 20px; box-sizing: border-box;}
+mark{color:#7e00ff;  background-color: transparent;}
+.underline{position: relative;}
+.underline::after{content: ''; position: absolute; left: 0; bottom: 0; width: 100%; }
 /* 팝업 공통 */
 .popupArea{display: none; position: fixed; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.7);  z-index: 10;}
 .popupArea.active{display: flex;}
@@ -28,21 +30,26 @@
 /* 해더 */
 header{width: 100%; height: 7.125em; background-color: #f2f2f2; position: fixed; left: 0; top: 0; z-index: 1;}
 header > div{height: 100%; display: flex; align-items: center; }
-header > div button.menuBtn{margin-right: 2.500em;}
-header > div button.menuBtn span{display: block; width: 33px; height: 0.250em; background-color: black; border-radius: 12.500em;}
-header > div button.menuBtn span:not(:last-of-type){margin-bottom: 0.688em;}
-header > div button:nth-of-type(2){margin-left: auto; margin-right: 2.250em;}
+header > div > button.menuBtn{margin-right: 2.500em;}
+header > div > button.menuBtn span{display: block; width: 33px; height: 0.250em; background-color: black; border-radius: 12.500em;}
+header > div > button.menuBtn span:not(:last-of-type){margin-bottom: 0.688em;}
+header > div > button:nth-of-type(2){margin-left: auto; margin-right: 2.250em;}
 header > div > h1, header > div > h2{font-size: 2.688em; font-weight: 900;}
-header > div button.noticePopupBtn , header > div button.searcPopuphBtn{width: 2.563em; height: 2.438em; background-repeat: no-repeat; background-position: center; background-size: cover; text-indent: -9999px;}
-header > div button.searcPopuphBtn{background-image: url('../images/searchIcon.png')}
-header > div button.noticePopupBtn{position: relative; background-image: url('../images/noticeIcon.png')}
-header > div button.noticePopupBtn span{font-size:1em; font-weight: 900; color: white;  position: absolute; right: -0.813em; top: -0.813em; width: 1.688em; height: 1.688em; display: flex; justify-content: center; align-items: center; border: 3px solid #f2f2f2; border-radius: 100%; background-color: #7e00ff; text-indent: 0;}
+header > div > button.noticePopupBtn , header > div button.searcPopuphBtn{width: 2.563em; height: 2.438em; background-repeat: no-repeat; background-position: center; background-size: cover; text-indent: -9999px;}
+header > div > button.searcPopuphBtn{background-image: url('../images/searchIcon.png')}
+header > div > button.noticePopupBtn{position: relative; background-image: url('../images/noticeIcon.png')}
+header > div > button.noticePopupBtn span{font-size:1em; font-weight: 900; color: white;  position: absolute; right: -0.813em; top: -0.813em; width: 1.688em; height: 1.688em; display: flex; justify-content: center; align-items: center; border: 3px solid #f2f2f2; border-radius: 100%; background-color: #7e00ff; text-indent: 0;}
 
-/* header popup */
+/* 헤더 팝업 공통 */
 header > div .popupArea{justify-content: center; align-items: flex-start;}
-header > div .popupArea > div{width: 100%; max-width: 767px; background-color: white; padding: 2.500em 40px 3.125em;}
-header > div .popupArea > div h2, header > div .popupArea > div h3{font-size: 2.688em; font-weight: 900; margin-bottom: 2.093em;}
+header > div .popupArea > div{width: 100%; max-width: 767px; background-color: white; padding: 2.500em 40px 0; box-sizing: border-box;}
+header > div .popupArea > div h2, header > div .popupArea > div h3{font-size: 2.688em; font-weight: 900;}
 header > div .popupArea > div button.popupCloseBtn{right: 40px; top: 2.500em;}
+/* 해더 팝업 공통 fin*/
+
+/* 해더 팝업 - 검색 팝업 */
+header > div .popupArea > div.searcPopupArea{padding-bottom: 3.125em;}
+header > div .popupArea > div.searcPopupArea h2, header > div .popupArea > div.searcPopupArea h3{margin-bottom: 2.093em;}
 header > div .popupArea > div.searcPopupArea .searchArea{position: relative; margin-bottom: 4.375em;}
 header > div .popupArea > div.searcPopupArea .searchArea input[type="search"]{font-size: 1.625em; font-weight: 700; width: 100%; height: 3.462em; border: 4px solid #7e00ff; padding: 0 1.154em; border-radius: 50px}
 header > div .popupArea > div.searcPopupArea .searchArea input[type="search"]::placeholder{color: black;}
@@ -51,8 +58,33 @@ header > div .popupArea > div.searcPopupArea ul{display: flex;}
 header > div .popupArea > div.searcPopupArea ul li{font-size: 1.500em; color: #777777; position: relative;}
 header > div .popupArea > div.searcPopupArea ul li::after{content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 2px; background-color:#777777;}
 header > div .popupArea > div.searcPopupArea ul li:not(:last-of-type){margin-right:1em; }
-/* header popup fin*/
-/* header fin*/
+
+/* 해더 팝업 - 검색 팝업 fin */
+/* 해더 팝업 - 알림 팝업 */
+header > div .popupArea > div.noticePopupArea{height: 46.875em; padding-bottom: 2.813em; display: flex; flex-direction: column;}
+header > div .popupArea > div.noticePopupArea h2, header > div .popupArea > div.noticePopupArea h3{margin-bottom: 1.512em;}
+header > div .popupArea > div.noticePopupArea .noticeArea{display: flex; flex-direction: column;}
+header > div .popupArea > div.noticePopupArea .noticeArea p{font-size: 1.625em; font-weight: 700; align-self: flex-start; position: relative; margin-bottom: 2.500em;}
+header > div .popupArea > div.noticePopupArea .noticeArea .underline::after{height: 1px;}
+header > div .popupArea > div.noticePopupArea .noticeArea p.underline::after{background-color: black;}
+header > div .popupArea > div.noticePopupArea .noticeArea p mark{font-weight: 700; position: relative;}
+header > div .popupArea > div.noticePopupArea .noticeArea p mark.underline::after{height: 2px; bottom: 0.5px; background-color: #7e00ff; z-index: 1;}
+header > div .popupArea > div.noticePopupArea .noticeArea ol li{font-size: 1.438em; width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+header > div .popupArea > div.noticePopupArea .noticeArea ol li:not(:last-of-type){margin-bottom: 1.957em;}
+header > div .popupArea > div.noticePopupArea .noticePageArea{flex: 1; display: flex; flex-direction: column;}
+header > div .popupArea > div.noticePopupArea .noticePageArea h4{font-size: 1.625em; font-weight: 700; margin-bottom: 1.731em;}
+header > div .popupArea > div.noticePopupArea .noticePageArea p{font-size: 1.438em; line-height: 1.4782; flex: 1; overflow-y: auto;}
+header > div .popupArea > div.noticePopupArea .noticeControlsBtn{margin-top: auto; display: flex; justify-content: space-between; align-items: center;}
+header > div .popupArea > div.noticePopupArea .noticeControlsBtn button{width: 1.188em; height: 2.188em; background-repeat: no-repeat; background-size: cover; background-position: center;}
+header > div .popupArea > div.noticePopupArea .noticeControlsBtn button:nth-of-type(1){background-image: url('../images/prevBtn.png');}
+header > div .popupArea > div.noticePopupArea .noticeControlsBtn button:nth-of-type(2){background-image: url('../images/nextBtn.png');}
+header > div .popupArea > div.noticePopupArea .noticeControlsBtn div{font-size: 1.625em; display: flex;}
+header > div .popupArea > div.noticePopupArea .noticeControlsBtn div span:first-of-type::after{content: '/';}
+header > div .popupArea > div.noticePopupArea .noticeControlsBtn div.underline::after{height: 1px; background-color: black;}
+
+/* 해더 팝업 - 알림 팝업 fin*/
+
+/* 해더 fin*/
 
 /* 하단 메뉴 */
 .wrap > nav{position: fixed; left: 0; bottom: 0; width: 100%;  background-color: #7e00ff;}
@@ -67,4 +99,4 @@ header > div .popupArea > div.searcPopupArea ul li:not(:last-of-type){margin-rig
 .wrap > nav ul li:nth-of-type(3) a div{}
 .wrap > nav ul li:nth-of-type(3) a div img{transform: scale(1.45);transform-origin: bottom;}
 /* .wrap > nav ul li:nth-of-type(3) a img{transform: scale(1.45);transform-origin: bottom;} */
-/* 하단 메뉴 fin *
+/* 하단 메뉴 fin */
