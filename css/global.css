@@ -1,9 +1,10 @@
 /* font-size 
     20px = 1.250em
-    23px = 1.438em
+    23px = 1.438em  line-height 34px = 1.4782
     24px = 1.500em
     26px = 1.625em
     30px = 1.875em
+    36px = 2.250em
     43px = 2.688em
 */
 /* 공통 */
@@ -28,7 +29,7 @@ mark{color:#7e00ff;  background-color: transparent;}
 .popupArea > div button.popupCloseBtn{width: 1.438em; height: 1.438em; text-indent: -9999px; background: url('../images/XIcon.png') no-repeat center / cover; position: absolute; }
 
 /* 해더 */
-header{width: 100%; height: 7.125em; background-color: #f2f2f2; position: fixed; left: 0; top: 0; z-index: 1;}
+header{width: 100%; height: 7.125em; background-color: #f2f2f2; position: fixed; left: 0; top: 0; z-index: 10;}
 header > div{height: 100%; display: flex; align-items: center; }
 header > div > button.menuBtn{margin-right: 2.500em;}
 header > div > button.menuBtn span{display: block; width: 33px; height: 0.250em; background-color: black; border-radius: 12.500em;}
@@ -58,8 +59,20 @@ header > div .popupArea > div.searcPopupArea ul{display: flex;}
 header > div .popupArea > div.searcPopupArea ul li{font-size: 1.500em; color: #777777; position: relative;}
 header > div .popupArea > div.searcPopupArea ul li::after{content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 2px; background-color:#777777;}
 header > div .popupArea > div.searcPopupArea ul li:not(:last-of-type){margin-right:1em; }
-
 /* 해더 팝업 - 검색 팝업 fin */
+/* 해더 팝업 - 검색 결과 */
+.searchResultsArea{position: fixed; top: 7.125em; left: 0; width: 100%; height: calc(100vh - 7.125em); box-sizing: border-box; padding-top: 4.250em; background-color: white; z-index: 1;}
+.searchResultsArea > div{}
+.searchResultsArea > div > p{font-size: 2.250em; margin-bottom: 0.417em;}
+.searchResultsArea > div > p span{display: inline-block; height: 100%;}
+.searchResultsArea > div > p span.underline{padding-bottom: 0.333em; position: relative;}
+.searchResultsArea > div > p span.underline::after{height: 0.139em; background-color: #7e00ff;}
+.searchResultsArea > div > ul{height: calc(100vh - 15.313em); overflow-y: auto;}
+.searchResultsArea > div > ul li{padding: 3.438em 0 2.813em; border-bottom: 1px solid #a3a3a3;}
+.searchResultsArea > div > ul li strong{display: inline-block; font-size: 1.625em; font-weight: 900; margin-bottom: 0.577em;}
+.searchResultsArea > div > ul li p{font-size: 1.438em; line-height: 1.4782;}
+
+
 /* 해더 팝업 - 알림 팝업 */
 header > div .popupArea > div.noticePopupArea{height: 46.875em; padding-bottom: 2.813em; display: flex; flex-direction: column;}
 header > div .popupArea > div.noticePopupArea h2, header > div .popupArea > div.noticePopupArea h3{margin-bottom: 1.512em;}
@@ -81,7 +94,6 @@ header > div .popupArea > div.noticePopupArea .noticeControlsBtn button:nth-of-t
 header > div .popupArea > div.noticePopupArea .noticeControlsBtn div{font-size: 1.625em; display: flex;}
 header > div .popupArea > div.noticePopupArea .noticeControlsBtn div span:first-of-type::after{content: '/';}
 header > div .popupArea > div.noticePopupArea .noticeControlsBtn div.underline::after{height: 1px; background-color: black;}
-
 /* 해더 팝업 - 알림 팝업 fin*/
 
 /* 해더 fin*/
@@ -93,10 +105,8 @@ header > div .popupArea > div.noticePopupArea .noticeControlsBtn div.underline::
 .wrap > nav ul li a{ font-size: 1.250em; color: #b388ff; width: 100%; padding:1.100em 0 1.100em 0; display: flex; flex-direction: column; justify-content: center; align-items: center;}
 .wrap > nav ul li a div{ width: 2.450em; height: 2.100em; margin-bottom: 0.750em;}
 .wrap > nav ul li a div img{width: 100%;}
-/* .wrap > nav ul li a img{width: 49px; height: 42px; margin-bottom: 15px;} */
 .wrap > nav ul li:nth-of-type(3) a{color: white; position: relative;}
 .wrap > nav ul li:nth-of-type(3) a::after{    content: ''; position: absolute; bottom: 1.800em; left: -0.200em; width: 6.000em; height: 5.600em; background-color: #7e00ff; border-radius: 100%; z-index: -1;}
 .wrap > nav ul li:nth-of-type(3) a div{}
 .wrap > nav ul li:nth-of-type(3) a div img{transform: scale(1.45);transform-origin: bottom;}
-/* .wrap > nav ul li:nth-of-type(3) a img{transform: scale(1.45);transform-origin: bottom;} */
 /* 하단 메뉴 fin */
