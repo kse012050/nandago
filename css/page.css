@@ -28,11 +28,15 @@
 .hairInputArea fieldset > ul > li h3{width: 100%; font-size: 1.625em; font-weight: 900; margin-bottom: 1.154em;}
 .hairInputArea fieldset > ul > li h3 label{font-weight: 900;}
 .hairInputArea fieldset > ul > li > button{position: absolute; right: 0; top: -0.250em; font-size:1.250em; color: white; width: 5.250em; height: 2.000em; background-color: #9f9f9f; border-radius: 30px; text-indent: 0;}
-.hairInputArea fieldset > ul > li input ,
+/* .hairInputArea fieldset > ul > li input ,
 .hairInputArea fieldset > ul > li input[type="radio"] + label
 {flex: 1; font-size: 1.438em; font-weight: 600; height: 2.652em; border-radius: 30px; box-sizing: border-box; border: 2px solid transparent; display: flex; justify-content: center; align-items: center;}
-.hairInputArea fieldset > ul > li > label{}
-.hairInputArea fieldset > ul > li input[type="text"]{padding: 0 1.522em; border: none;}
+.hairInputArea fieldset > ul > li input[type="text"]{padding: 0 1.522em; border: none;} */
+.hairInputArea fieldset > ul > li input ,
+.hairInputArea fieldset > ul > li input[type="radio"] + label
+{border: 2px solid transparent; }
+.hairInputArea fieldset > ul > li input[type="text"]{border: none;}
+
 .hairInputArea fieldset > ul > li input[type="radio"],
 .hairInputArea fieldset > ul > li input[type="checkbox"]
 {display: none}
@@ -96,6 +100,37 @@
 .QnAArea > div > ul li div:nth-of-type(3) button.speechBubblePlusIcon::before{background-image: url('../images/speechBubblePlusIcon.png');} */
 .QnAArea > div > button.writeBtn{width: 11.739em; display: block; margin: auto auto 0;}
 /* Q&A fin*/
+
+
+/* Q&A 상세페이지 */
+.QnADetailArea > div{padding-bottom:4.375em;}
+.QnADetailArea > div > div.QnADetailContentsArea{padding: 2.813em 0 1.875em; border-bottom: 1px solid #e3e3e3; margin-bottom: 3.750em;}
+.QnADetailArea > div > div.QnADetailContentsArea h3{display: flex; justify-content: space-between; align-items: center; font-size:1.625em; font-weight: 700; margin-bottom: 1em;}
+.QnADetailArea > div > div.QnADetailContentsArea h3 strong{font-weight: 900;}
+.QnADetailArea > div > div.QnADetailContentsArea h3 span{font-size: 0.769em;}
+.QnADetailArea > div > div.QnADetailContentsArea p:nth-of-type(1){display: flex; align-items: center; margin-bottom: 1.273em;}
+.QnADetailArea > div > div.QnADetailContentsArea p:nth-of-type(1) strong{display: inline-block; font-size: 0.957em; margin-right: 0.909em;}
+.QnADetailArea > div > div.QnADetailContentsArea p:nth-of-type(1){font-size: 1.375em;}
+.QnADetailArea > div > div.QnADetailContentsArea p:nth-of-type(1) strong{font-weight: 700;}
+.QnADetailArea > div > div.QnADetailContentsArea p:nth-of-type(1) span:not(:last-of-type)::after{content: '/';}
+.QnADetailArea > div > div.QnADetailContentsArea img{width: 100%; margin-bottom: 1.875em;}
+.QnADetailArea > div > div.QnADetailContentsArea p:nth-of-type(2){font-size: 1.438em; line-height: 1.5652; margin-bottom: 1.957em;}
+.QnADetailArea > div > div.QnADetailContentsArea > div{display: flex; justify-content: flex-end;}
+.QnADetailArea > div > div.QnADetailContentsArea .upDownBtnArea{margin-right: auto; }
+/* Q&A 상세페이지 up , down 버튼*/
+.upDownBtnArea{width: 9.063em; height: 2.813em; border: 1px solid #d5d5d5; border-radius: 50px; box-sizing: border-box; display: flex; justify-content: space-evenly; align-items: center;}
+.upDownBtnArea span{font-size: 1.375em; font-weight: 700;}
+.upDownBtnArea button.upBtn ,.upDownBtnArea button.downBtn{width: 1.250em; height: 1.250em; background-repeat: no-repeat; background-position: center; background-size: cover;}
+.upDownBtnArea button.upBtn{background-image: url('../images/upIcon.png')}
+.upDownBtnArea button.downBtn{background-image: url('../images/downIcon.png')}
+.QnADetailArea > div select{display: block; margin-left: auto; font-size: 1.375em; font-weight: 700; width: 7.727em; height: 2.727em; padding: 0 0.909em; border-color: #d5d5d5; margin-bottom: 0.909em;}
+.QnADetailArea > div > .test{border-top: 1px solid #9f9f9f;}
+.QnADetailArea .test .answer{font-size: 0.870em; margin-right: 0.350em;}
+.QnADetailArea .test .upDownBtnArea{font-size: 0.727em; margin-left: auto;}
+.QnADetailArea .writeArea{display: flex;}
+.QnADetailArea .writeArea input[type="text"]{flex: 1; border-color: #c3c3c3; border-style: solid; margin-right: 0.435em;}
+.QnADetailArea .writeArea button{width: 5.435em; color: #7e00ff; font-weight: 700;}
+
 
 /* 병원 의사 */
 .hospitalArea > div{display: flex; flex-direction: column; height: 100%;}
