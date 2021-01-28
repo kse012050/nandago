@@ -69,3 +69,40 @@
 .hairInputArea fieldset .popupArea ul li strong::before{content: ':'; display: inline-block;}
 .hairInputArea fieldset .popupArea ul li:not(:last-of-type){margin-bottom: 1.739em;}
 
+
+/* Q&A */
+.QnAArea > div{height: 100%; display: flex; flex-direction: column; padding-bottom: 5em; box-sizing: border-box;}
+.QnAArea > div > *{max-width: 600px; margin: 0 auto; padding-right: 20px; padding-left: 20px; box-sizing: border-box;}
+.QnAArea > div .subMenuArea{margin-bottom: 1.2500em;}
+.QnAArea > div .subMenuArea ul{justify-content: space-between;}
+.QnAArea > div > ul{flex: 1; overflow-y: auto; margin-bottom: 3.125em;}
+/* .QnAArea > div > ul li{display: flex; flex-wrap: wrap; justify-content: flex-start; padding: 1.875em 0 2.500em; border-bottom: 1px solid #9f9f9f;}
+.QnAArea > div > ul li div:nth-of-type(1){width: 6.750em; height: 6.750em; line-height: 0; margin-right: 1.688em; position: relative;}
+.QnAArea > div > ul li div:nth-of-type(1) .answer{position: absolute; left: -1em; top: -1.100em; }
+.QnAArea > div > ul li div:nth-of-type(1) img{width: 100%;} */
+/* .QnAArea > div > ul li div:nth-of-type(2){flex: 1; display: flex; flex-direction: column; justify-content: space-around; }
+.QnAArea > div > ul li div:nth-of-type(2) p{display: flex; align-items: center;}
+.QnAArea > div > ul li div:nth-of-type(2) p strong{display: inline-block; font-size: 0.957em; margin-right: 0.909em;}
+.QnAArea > div > ul li div:nth-of-type(2) p:nth-of-type(1){font-size: 1.438em; font-weight: 900;}
+.QnAArea > div > ul li div:nth-of-type(2) p:nth-of-type(1) strong{font-weight: 900;}
+.QnAArea > div > ul li div:nth-of-type(2) p:nth-of-type(2){font-size: 1.375em;}
+.QnAArea > div > ul li div:nth-of-type(2) p:nth-of-type(2) strong{font-weight: 700;}
+.QnAArea > div > ul li div:nth-of-type(2) p:nth-of-type(2) span:not(:last-of-type)::after{content: '/';} */
+.QnAArea > div > ul li div:nth-of-type(3){width: 100%; padding-left: 8.438em; display: flex; margin-top: 1em;}
+/* .QnAArea > div > ul li div:nth-of-type(3) button{text-indent: 0; font-size: 1.375em; display: flex; align-items: center;}
+.QnAArea > div > ul li div:nth-of-type(3) button:not(:last-of-type){margin-right: 1.364em;}
+.QnAArea > div > ul li div:nth-of-type(3) button::before{content: ''; width: 1.000em; height: 1.000em; margin-right: 0.273em; background-repeat: no-repeat; background-position: center; background-size: cover;}
+.QnAArea > div > ul li div:nth-of-type(3) button.speechBubbleIcon::before{background-image: url('../images/speechBubbleIcon.png');}
+.QnAArea > div > ul li div:nth-of-type(3) button.speechBubblePlusIcon::before{background-image: url('../images/speechBubblePlusIcon.png');} */
+.QnAArea > div > button.writeBtn{width: 11.739em; display: block; margin: auto auto 0;}
+/* Q&A fin*/
+
+/* 병원 의사 */
+.hospitalArea > div{display: flex; flex-direction: column; height: 100%;}
+.hospitalArea > div > .subMenuArea{margin-bottom: 2.500em;}
+.hospitalArea > div > .subMenuArea ul{justify-content: space-around;}
+.bannerArea{width: 100%; max-width: 600px; height: 11.063em; margin: 0 auto;  line-height: 0; border-radius: 50px; overflow: hidden;}
+.bannerArea img{width: 100%;}
+.hospitalArea > div > *:not(.bannerArea){width: 100%; max-width: 600px; margin-left: auto; margin-right: auto; padding-right: 20px; padding-left: 20px; box-sizing: border-box;}
+.hospitalArea > div button{font-size:1em; }
+.hospitalArea > div button::before{width: 1.182em; height: 1.182em;}

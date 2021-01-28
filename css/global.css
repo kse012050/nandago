@@ -1,5 +1,6 @@
 /* font-size 
     20px = 1.250em
+    22px = 1.375em
     23px = 1.438em  line-height 34px = 1.4782
     24px = 1.500em
     26px = 1.625em
@@ -27,6 +28,42 @@ mark{color:#7e00ff;  background-color: transparent;}
 .popupArea.active{display: flex;}
 .popupArea > div{position: relative;}
 .popupArea > div button.popupCloseBtn{width: 1.438em; height: 1.438em; text-indent: -9999px; background: url('../images/XIcon.png') no-repeat center / cover; position: absolute; }
+
+.QnAArea, .hospitalArea{height: 100vh; padding: 7.125em 0 7.500em; box-sizing: border-box;}
+/* 답변 */
+.answer{font-size: 1.250em; color: #7e00ff; font-weight: 700; width: 5.250em; height: 2.000em; border:2px solid #7e00ff; border-radius: 25px; background-color: white; display: flex; justify-content: center; align-items: center; box-sizing: border-box;}
+.answer::after{content: '중';}
+.answer.selection{background-color: #7e00ff; color: white;}
+.answer.selection::after{content: '채택';}
+/* 글쓰기 , 등록 버튼 */
+.writeBtn{text-indent: 0; font-size:1.438em;  height: 2.609em; border: 2px solid #7e00ff; border-radius: 50px;}
+
+/* 서브 메뉴 */
+.subMenuArea{width: 100%; padding-top: 4.250em; position: relative;}
+.subMenuArea ul{display: flex;  padding-bottom: 1.250em; border-bottom: 1px solid #a3a3a3;}
+.subMenuArea ul li{font-size: 1.625em; font-weight: 900;}
+.subMenuArea .subMenuBar{position: absolute; bottom: 0; height: 5px; background-color: #7e00ff;}
+
+ul.test{flex: 1; overflow-y: auto; margin-bottom: 3.125em;}
+ul.test li{display: flex; flex-wrap: wrap; justify-content: flex-start; padding: 1.875em 0 1.875em; border-bottom: 1px solid #9f9f9f;}
+ul.test li div:nth-of-type(1){width: 6.750em; height: 6.750em; line-height: 0; margin-right: 1.688em; position: relative;}
+ul.test li div:nth-of-type(1) .answer{position: absolute; left: -1em; top: -1.100em; }
+ul.test li div:nth-of-type(1) img{width: 100%;}
+ul.test li div:nth-of-type(2){flex: 1; display: flex; flex-direction: column; justify-content: space-around; }
+ul.test li div:nth-of-type(2) p{display: flex; align-items: center;}
+ul.test li div:nth-of-type(2) p strong{display: inline-block; font-size: 0.957em; margin-right: 0.909em;}
+ul.test li div:nth-of-type(2) p:nth-of-type(1){font-size: 1.438em; font-weight: 900;}
+ul.test li div:nth-of-type(2) p:nth-of-type(1) strong{font-weight: 900;}
+ul.test li div:nth-of-type(2) p:nth-of-type(2){font-size: 1.375em;}
+ul.test li div:nth-of-type(2) p:nth-of-type(2) strong{font-weight: 700;}
+ul.test li div:nth-of-type(2) p:nth-of-type(2) span:not(:last-of-type)::after{content: '/';}
+
+.test button{text-indent: 0; font-size: 1.375em; display: flex; align-items: center;}
+.test button:not(:last-of-type){margin-right: 1.364em;}
+.test button::before{content: ''; width: 1.000em; height: 1.000em; margin-right: 0.273em; background-repeat: no-repeat; background-position: center; background-size: cover;}
+.test button.speechBubbleIcon::before{background-image: url('../images/speechBubbleIcon.png');}
+.test button.speechBubblePlusIcon::before{background-image: url('../images/speechBubblePlusIcon.png');}
+
 
 /* 해더 */
 header{width: 100%; height: 7.125em; background-color: #f2f2f2; position: fixed; left: 0; top: 0; z-index: 10;}
