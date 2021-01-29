@@ -137,13 +137,13 @@ header > div .popupArea > div.searcPopupArea ul li::after{content: ''; position:
 header > div .popupArea > div.searcPopupArea ul li:not(:last-of-type){margin-right:1em; }
 /* 해더 팝업 - 검색 팝업 fin */
 /* 해더 팝업 - 검색 결과 */
-.searchResultsArea{position: fixed; top: 7.125em; left: 0; width: 100%; height: calc(100vh - 7.125em); box-sizing: border-box; padding-top: 4.250em; background-color: white; z-index: 1;}
+.searchResultsArea{position: fixed; top: 7.125em; left: 0; width: 100%; height: calc(100vh - 7.125em); box-sizing: border-box; padding-top: 4.250em; background-color: white; z-index: 100;}
 .searchResultsArea > div{}
 .searchResultsArea > div > p{font-size: 2.250em; margin-bottom: 0.417em;}
 .searchResultsArea > div > p span{display: inline-block; height: 100%;}
 .searchResultsArea > div > p span.underline{padding-bottom: 0.333em; position: relative;}
 .searchResultsArea > div > p span.underline::after{height: 0.139em; background-color: #7e00ff;}
-.searchResultsArea > div > ul{height: calc(100vh - 23em); overflow-y: auto;}
+.searchResultsArea > div > ul{height: calc(100vh - 15.313em); overflow-y: auto;}
 .searchResultsArea > div > ul li{padding: 3.438em 0 2.813em; border-bottom: 1px solid #a3a3a3;}
 .searchResultsArea > div > ul li strong{display: inline-block; font-size: 1.625em; font-weight: 900; margin-bottom: 0.577em;}
 .searchResultsArea > div > ul li p{font-size: 1.438em; line-height: 1.4782;}
