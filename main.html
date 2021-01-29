@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Q&A - 난다고</title>
-    <script src="js/common.js"></script>
+    <title>메인 - 난다고</title>
     <link rel="stylesheet" href="css/import.css">
 </head>
 <body>
@@ -16,7 +15,7 @@
                     <span></span>
                     <span></span>
                 </button>
-                <h2>Q&A</h2>
+                <h2>NandaGo</h2>
                 <button class="searcPopuphBtn">
                     검색 팝업 버튼
                 </button>
@@ -78,48 +77,79 @@
             </div>
         </header>
 
-        <section class="QnAArea">
-            <div>
-                <div class="subMenuArea">
-                    <ul>
-                        <li>전체</li>
-                        <li>탈모TIP</li>
-                        <li>탈모질문</li>
-                        <li>기타</li>
+        <div class="mainArea">
+            <div class="contentsWidth">
+                <section>
+                    <h3>탈모기상도</h3>
+                    <div class="progressArea">
+                        <div class="progress">
+                            <img src="images/graphImg01.png" alt="">
+                            <img src="images/graphImg02.png" alt="">
+                        </div>
+                        <p>홍길동님의 탈모 상태는 <mark>위험</mark> 입니다.</p>
+                    </div>
+                    <ul class="tabBtnArea">
+                        <li class="active">이마면적</li>
+                        <li>모수</li>
+                        <li>굵기</li>
                     </ul>
-                    <div class="subMenuBar"></div>
+                </section>
+                <section>
+                    <h3>그래프</h3>
+                    <div>
+                        <img src="images/graphImg03.png" alt="">
+                    </div>
+                    <ul class="tabBtnArea">
+                        <li class="active">3개월</li>
+                        <li>6개월</li>
+                        <li>1년</li>
+                        <li>전체 </li>
+                    </ul>
+                </section>
+                <div>
+                    <!-- 베너 -->
                 </div>
-                <ul class="test">
-                    <li>
-                        <div class="testBox">
-                            <div class="test01">
-                                <img src="images/faceImg.png" alt="">
-                                <span class="answer">답변</span>
-                            </div>
-                            <div class="test02">
-                                <p>
-                                    <strong>탈모TIP</strong>
-                                    원형 탈모가 너무 고민입니다.
-                                </p>
-                                <p>
-                                    <strong>
-                                        홍길동
-                                    </strong>
-                                    <span>2020</span>
-                                    <span>02</span>
-                                    <span>01</span>
-                                </p>
+                <section>
+                    <h3>최근 진단결과</h3>
+                    <div class="progressArea">
+                        <h4>
+                            탈모확률
+                            <span>본 서비스는 참고용입니다.</span>
+                        </h4>
+                        <div class="progress">
+                            <img src="images/graphImg02.png" alt="">
+                        </div>
+                        <div class="percentage">
+                            <div>
+                                <dl>
+                                    <dt>M자깊이</dt>
+                                    <dd><mark>30</mark></dd>
+                                </dl>
+                                <div>
+                                    <div>진행률</div>
+                                </div>
                             </div>
                             <div>
-                                <button class="speechBubbleIcon">1</button>
-                                <button class="speechBubblePlusIcon">2</button>
+                                <dl>
+                                    <dt>이마넓이</dt>
+                                    <dd><mark>50</mark></dd>
+                                </dl>
+                                <div>
+                                    <div>진행률</div>
+                                </div>
                             </div>
                         </div>
-                    </li>
-                </ul>
-                <button class="writeBtn">글쓰기</button>
+                    </div>
+                </section>
+                <section>
+                    <h3>진단이력</h3>
+                    <button></button>
+                    <div>
+
+                    </div>
+                </section>
             </div>
-        </section>
+        </div>
 
         <nav>
             <ul class="contentsWidth">
@@ -166,6 +196,5 @@
             </ul>
         </nav>
     </div>
-    <script src="js/common.js"></script>
 </body>
 </html>

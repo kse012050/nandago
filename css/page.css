@@ -1,6 +1,33 @@
 .hospitalArea > div > *:not(.bannerArea),
 .diagnosisResultArea > div > *:not(.slider){width: 100%; max-width: 600px; margin-left: auto; margin-right: auto; padding-right: 20px; padding-left: 20px; box-sizing: border-box;}
 
+
+/* 메인 */
+.mainArea{background-color: #f0f0f0;}
+.mainArea > div{padding-top: 0.625em;padding-bottom: 5.000em;}
+.mainArea > div > *{margin-bottom: 3.750em;}
+.mainArea > div section h3{font-size: 1.625em; font-weight: 900; margin-bottom:0.769em; padding: 0 0.769em;}
+.mainArea > div section > div{background-color: white; border-radius: 25px; margin-bottom: 1.538em;}
+.mainArea > div section div.progressArea{height:30.000em; display: flex; flex-direction: column; justify-content: space-between; box-sizing: border-box;}
+.mainArea > div section div.progressArea h4{font-size: 1.500em; font-weight: 900; display: flex; justify-content: space-between;}
+.mainArea > div section div.progressArea h4 span{font-size: 0.958em; font-weight: 700; opacity: 0.5;}
+.mainArea > div section div.progressArea div.progress{flex: 1; display: flex; align-items: center; justify-content: space-evenly;}
+.mainArea > div section div.progressArea div.progress img{width: 15.625em;}
+.mainArea > div section div.progressArea p{font-size: 1.625em; font-weight: 700; text-align: center; }
+.mainArea > div section div.progressArea div.percentage{display: flex; justify-content: space-between;}
+.mainArea > div section div.progressArea div.percentage > div{width: calc((100% - 3.125em) / 2);}
+.mainArea > div section div.progressArea div.percentage > div dl{display: flex; font-size: 1.500em; margin-bottom: 0.708em;}
+.mainArea > div section div.progressArea div.percentage > div dl *{font-weight: 900;}
+.mainArea > div section div.progressArea div.percentage > div dl dt::after{content: ': ';}
+.mainArea > div section div.progressArea div.percentage > div dl dd mark::after{content: '%'; }
+.mainArea > div section div.progressArea div.percentage > div > div{width: 100%; height: 0.750em; background-color: #f2f2f2; border-radius: 50px; position: relative; }
+.mainArea > div section div.progressArea div.percentage > div > div > div{text-indent: -9999px; position: absolute; left: 0; top: 0; height: 100%; width: 30%; background-color: black; border-radius: 50px;}
+.mainArea > div section:nth-of-type(1) > div{padding:0 1.250em 2.500em;;}
+.mainArea > div section:nth-of-type(2) > div img{width: 100%;}
+.mainArea > div section:nth-of-type(3) > div{padding: 1.875em 2.500em;}
+
+
+
 /* login page */
 .wrap .loginArea{height: 100vh;min-height: 71em;background: url(../images/loginBG.png) no-repeat center / cover;}
 .wrap .loginArea{padding: 5em 2.5em 2.813em;box-sizing: border-box;display: flex;flex-direction: column;justify-content: flex-end;text-align: center;}
@@ -58,7 +85,7 @@
 .hairInputArea fieldset .popupArea{justify-content: center; align-items: center;}
 .hairInputArea fieldset .popupArea.active{display: flex;}
 .hairInputArea fieldset .popupArea > div::after{content: ''; display: block; visibility: hidden; clear: both;}
-.hairInputArea fieldset .popupArea > div{width: calc(100% - 40px); max-width: 600px; height: 33.938em; background-color: white; padding: 0 20px; box-sizing: border-box; border-radius: 25px;}
+.hairInputArea fieldset .popupArea > div{width: calc(100% - 2.500em); max-width: 600px; height: 33.938em; background-color: white; padding: 0 20px; box-sizing: border-box; border-radius: 25px;}
 .hairInputArea fieldset .popupArea > div h4{width: 100%; font-size: 1.875em; font-weight: 900; padding-top: 1.833em;}
 .hairInputArea fieldset .popupArea > div{position: relative;}
 .hairInputArea fieldset .popupArea > div button.popupCloseBtn{right: 2.375em; top: 3.438em;}

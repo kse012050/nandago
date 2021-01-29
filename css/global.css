@@ -32,7 +32,7 @@ mark{color:#7e00ff;  background-color: transparent;}
 .popupArea > div button.popupCloseBtn{width: 1.438em; height: 1.438em; text-indent: -9999px; background: url('../images/XIcon.png') no-repeat center / cover; position: absolute; }
 
 .QnAArea, .hospitalArea{height: 100vh; padding: 7.125em 0 7.500em; box-sizing: border-box;}
-.QnADetailArea,.diagnosisResultArea{padding: 7.125em 0 7.500em; box-sizing: border-box;}
+.mainArea,.QnADetailArea,.diagnosisResultArea{padding: 7.125em 0 7.500em; box-sizing: border-box;}
 /* 답변 */
 .answer{font-size: 1.250em; color: #7e00ff; font-weight: 700; width: 5.250em; height: 2.000em; border:2px solid #7e00ff; border-radius: 25px; background-color: white; display: flex; justify-content: center; align-items: center; box-sizing: border-box;}
 .answer::after{content: '중';}
