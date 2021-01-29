@@ -35,6 +35,12 @@
 .mainArea > div section:nth-of-type(4) > div .mainRecordSlider .swiper-slide time{display: block; font-size: 1.375em; font-weight: 900; text-align: center;}
 .mainArea > div section:nth-of-type(4) > div .mainRecordSlider .swiper-slide time span{font-weight: 900;}
 .mainArea > div section:nth-of-type(4) > div .mainRecordSlider .swiper-slide time span:not(:first-of-type)::before{content: '/';}
+.mainArea > div section:nth-of-type(4) > div .mainRecordSlider .swiper-button-next,
+.mainArea > div section:nth-of-type(4) > div .mainRecordSlider .swiper-button-prev{color: black; font-size: 1em; width: auto;}
+.mainArea > div section:nth-of-type(4) > div .mainRecordSlider .swiper-button-next::after,
+.mainArea > div section:nth-of-type(4) > div .mainRecordSlider .swiper-button-prev::after{font-size: 2.5em;}
+.mainArea > div section:nth-of-type(4) > div .mainRecordSlider .swiper-button-next{right: 0;}
+.mainArea > div section:nth-of-type(4) > div .mainRecordSlider .swiper-button-prev{left: 0;}
 
 
 

@@ -26,7 +26,7 @@ mark{color:#7e00ff;  background-color: transparent;}
 .underline{position: relative;}
 .underline::after{content: ''; position: absolute; left: 0; bottom: 0; width: 100%; }
 /* 팝업 공통 */
-.popupArea{display: none; position: fixed; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.7);  z-index: 10;}
+.popupArea{display: none; position: fixed; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.7);  z-index: 100;}
 .popupArea.active{display: flex;}
 .popupArea > div{position: relative;}
 .popupArea > div button.popupCloseBtn{width: 1.438em; height: 1.438em; text-indent: -9999px; background: url('../images/XIcon.png') no-repeat center / cover; position: absolute; }
@@ -97,7 +97,7 @@ button.speechBubblePlusIcon::before{background-image: url('../images/speechBubbl
 .backArrowBtn{width: 1.233em; height: 0.814em; background: url('../images/backArrowBtn.png') no-repeat center center / cover; margin-right: 0.535em;}
 
 /* 해더 */
-header{width: 100%; height: 7.125em; background-color: #f2f2f2; position: fixed; left: 0; top: 0; z-index: 10;}
+header{width: 100%; height: 7.125em; background-color: #f2f2f2; position: fixed; left: 0; top: 0; z-index: 100;}
 header > div{height: 100%; display: flex; align-items: center; }
 header > div > button.menuBtn{margin-right: 2.500em;}
 header > div > button.menuBtn span{display: block; width: 33px; height: 0.250em; background-color: black; border-radius: 12.500em;}

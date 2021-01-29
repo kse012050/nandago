@@ -3,10 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>메인 - 난다고</title>
-    <!-- swiper slider -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <title>난다고</title>
     <link rel="stylesheet" href="css/import.css">
 </head>
 <body>
@@ -22,7 +19,7 @@
                 <button class="searcPopuphBtn">
                     검색 팝업 버튼
                 </button>
-                <div class="popupArea">
+                <div class="popupArea active">
                     <div class="searcPopupArea">
                         <h3>통합검색</h3>
                         <div class="searchArea">
@@ -80,115 +77,6 @@
             </div>
         </header>
 
-        <div class="mainArea">
-            <div class="contentsWidth">
-                <section>
-                    <h3>탈모기상도</h3>
-                    <div class="progressArea">
-                        <div class="progress">
-                            <img src="images/graphImg01.png" alt="">
-                            <img src="images/graphImg02.png" alt="">
-                        </div>
-                        <p>홍길동님의 탈모 상태는 <mark>위험</mark> 입니다.</p>
-                    </div>
-                    <ul class="tabBtnArea">
-                        <li class="active">이마면적</li>
-                        <li>모수</li>
-                        <li>굵기</li>
-                    </ul>
-                </section>
-                <section>
-                    <h3>그래프</h3>
-                    <div>
-                        <img src="images/graphImg03.png" alt="">
-                    </div>
-                    <ul class="tabBtnArea">
-                        <li class="active">3개월</li>
-                        <li>6개월</li>
-                        <li>1년</li>
-                        <li>전체 </li>
-                    </ul>
-                </section>
-                <div class="bannerArea">
-                    <div class="swiper-container bannerSlider">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img src="images/bannerImg.png" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="images/bannerImg.png" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="images/bannerImg.png" alt="">
-                            </div>
-                        </div>
-                        <div class="swiper-pagination"></div>
-                    </div>
-                </div>
-                <section>
-                    <h3>최근 진단결과</h3>
-                    <div class="progressArea">
-                        <h4>
-                            탈모확률
-                            <span>본 서비스는 참고용입니다.</span>
-                        </h4>
-                        <div class="progress">
-                            <img src="images/graphImg02.png" alt="">
-                        </div>
-                        <div class="percentage">
-                            <div>
-                                <dl>
-                                    <dt>M자깊이</dt>
-                                    <dd><mark>30</mark></dd>
-                                </dl>
-                                <div>
-                                    <div>진행률</div>
-                                </div>
-                            </div>
-                            <div>
-                                <dl>
-                                    <dt>이마넓이</dt>
-                                    <dd><mark>50</mark></dd>
-                                </dl>
-                                <div>
-                                    <div>진행률</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <h3>진단이력</h3>
-                    <button></button>
-                    <div>
-                        <div class="swiper-container mainRecordSlider">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img src="images/mainSliderImg01.png" alt="">
-                                    <time><span>2020</span><span>02</span><span>01</span></time>
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="images/mainSliderImg02.png" alt="">
-                                    <time><span>2020</span><span>02</span><span>01</span></time>
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="images/mainSliderImg03.png" alt="">
-                                    <time><span>2020</span><span>02</span><span>01</span></time>
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="images/mainSliderImg01.png" alt="">
-                                    <time><span>2020</span><span>02</span><span>01</span></time>
-                                </div>
-                            </div>
-                            <!-- Add Arrows -->
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </div>
-
         <nav>
             <ul class="contentsWidth">
                 <li>
@@ -234,23 +122,5 @@
             </ul>
         </nav>
     </div>
-
-    <script>
-        var swiper = new Swiper('.mainRecordSlider', {
-            slidesPerView: 3,
-            spaceBetween: 20,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-        });
-        var swiper = new Swiper('.bannerSlider', {
-            pagination: {
-                el: '.bannerSlider .swiper-pagination',
-                clickable: true,
-            },
-        });
-        
-    </script>
 </body>
 </html>
