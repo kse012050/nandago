@@ -145,6 +145,8 @@
 .hospitalArea > div button::before{width: 1.182em; height: 1.182em;}
 
 
+
+
 /* 진단결과 */
 .diagnosisResultArea > div{background-color: #f2f2f2; padding-bottom: 6.875em;}
 .diagnosisResultArea > div div.timeArea{line-height: 3.750em; display: flex; justify-content: space-between; align-items: center;}
@@ -156,7 +158,7 @@
 .diagnosisResultArea > div div.slider .hairlineArea div{height: 100%; display: flex; justify-content: center; align-items: center;}
 .diagnosisResultArea > div div.slider .hairlineArea div button{text-indent: 0; font-size: 1.375em; font-weight: 700; display: flex; align-items: center; }
 .diagnosisResultArea > div div.slider .hairlineArea div button:nth-of-type(1){color: white; margin-right: auto;}
-.diagnosisResultArea > div div.slider .hairlineArea div button:nth-of-type(1)::after{content: ''; display: inline-block; width: 1.261em; height: 1.261em; background: url('../images/exclamationMarkBtn.png') no-repeat center / cover; margin-left: 0.682em;}
+.diagnosisResultArea > div div.slider .hairlineArea div button:nth-of-type(1)::after{content: ''; display: inline-block; width: 1.261em; height: 1.261em; background: url('../images/exclamationMarkBtn01.png') no-repeat center / cover; margin-left: 0.682em;}
 .diagnosisResultArea > div div.slider .hairlineArea div button:nth-of-type(2)::before , .diagnosisResultArea > div div.slider .hairlineArea div button:nth-of-type(3)::before
 {content: ''; display: inline-block; width: 3.864em; height: 0.364em; border-radius: 50px; margin-right: 0.909em;}
 .diagnosisResultArea > div div.slider .hairlineArea div button:nth-of-type(2){color: #00ff00;}

@@ -104,6 +104,14 @@ header > div > button.noticePopupBtn , header > div button.searcPopuphBtn{width:
 header > div > button.searcPopuphBtn{background-image: url('../images/searchIcon.png')}
 header > div > button.noticePopupBtn{position: relative; background-image: url('../images/noticeIcon.png')}
 header > div > button.noticePopupBtn span{font-size:1em; font-weight: 900; color: white;  position: absolute; right: -0.813em; top: -0.813em; width: 1.688em; height: 1.688em; display: flex; justify-content: center; align-items: center; border: 3px solid #f2f2f2; border-radius: 100%; background-color: #7e00ff; text-indent: 0;}
+/* 진단촬영 해더 */
+.diagnosticImaging header{}
+.diagnosticImaging header > div > button{display: flex; align-items: center;}
+.diagnosticImaging header > div > button.backArrowBtn{font-size: 2.688em;}
+.diagnosticImaging header > div > button.exclamationBtn{text-indent: 0; font-size: 1.375em; font-weight: 700; padding-bottom: 0.318em; position: relative;}
+.diagnosticImaging header > div > button.exclamationBtn::after{content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 1px; background-color: rgba(0, 0, 0, 0.15)}
+.diagnosticImaging header > div > button.exclamationBtn::before{content: ''; display: inline-block; width: 1.318em; height: 1.318em; background: url('../images/exclamationMarkBtn02.png') no-repeat center / cover; margin-right: 0.682em;}
+/* 진단촬영 해더 fin*/
 
 /* 헤더 팝업 공통 */
 header > div .popupArea{justify-content: center; align-items: flex-start;}
