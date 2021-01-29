@@ -1,4 +1,5 @@
-
+.hospitalArea > div > *:not(.bannerArea),
+.diagnosisResultArea > div > *:not(.slider){width: 100%; max-width: 600px; margin-left: auto; margin-right: auto; padding-right: 20px; padding-left: 20px; box-sizing: border-box;}
 
 /* login page */
 .wrap .loginArea{height: 100vh;min-height: 71em;background: url(../images/loginBG.png) no-repeat center / cover;}
@@ -28,24 +29,25 @@
 .hairInputArea fieldset > ul > li h3{width: 100%; font-size: 1.625em; font-weight: 900; margin-bottom: 1.154em;}
 .hairInputArea fieldset > ul > li h3 label{font-weight: 900;}
 .hairInputArea fieldset > ul > li > button{position: absolute; right: 0; top: -0.250em; font-size:1.250em; color: white; width: 5.250em; height: 2.000em; background-color: #9f9f9f; border-radius: 30px; text-indent: 0;}
-/* .hairInputArea fieldset > ul > li input ,
-.hairInputArea fieldset > ul > li input[type="radio"] + label
-{flex: 1; font-size: 1.438em; font-weight: 600; height: 2.652em; border-radius: 30px; box-sizing: border-box; border: 2px solid transparent; display: flex; justify-content: center; align-items: center;}
-.hairInputArea fieldset > ul > li input[type="text"]{padding: 0 1.522em; border: none;} */
 .hairInputArea fieldset > ul > li input ,
-.hairInputArea fieldset > ul > li input[type="radio"] + label
+.hairInputArea fieldset > ul > li .radioArea input[type="radio"] + label
+{flex: 1; font-size: 1.438em; font-weight: 600; height: 2.652em; border-radius: 30px; box-sizing: border-box; border: 2px solid transparent; display: flex; justify-content: center; align-items: center;}
+.hairInputArea fieldset > ul > li input[type="text"]{padding: 0 1.522em; border: none;}
+.hairInputArea fieldset > ul > li input ,
+.hairInputArea fieldset > ul > li .radioArea input[type="radio"] + label
 {border: 2px solid transparent; }
 .hairInputArea fieldset > ul > li input[type="text"]{border: none;}
 
-.hairInputArea fieldset > ul > li input[type="radio"],
+.hairInputArea fieldset > ul > li .radioArea input[type="radio"],
 .hairInputArea fieldset > ul > li input[type="checkbox"]
 {display: none}
-.hairInputArea fieldset > ul > li input[type="radio"] + label{background-color: white;}
-.hairInputArea fieldset > ul > li input[type="radio"]:checked + label{border-color: #7e00ff;}
-.hairInputArea fieldset > ul > li input[type="radio"] + label:not(:last-of-type){margin-right: 0.870em;}
-.hairInputArea fieldset > ul > li.test  input[type="radio"] + label{flex-basis: calc(25% - 0.870em);}
-.hairInputArea fieldset > ul > li.test  input[type="radio"] + label:nth-of-type(4){margin-right: 0;}
-.hairInputArea fieldset > ul > li.test  input[type="radio"] + label:nth-last-of-type(n + 5){margin-bottom: 0.565em;}
+.hairInputArea fieldset > ul > li .radioArea{width: 100%; display: flex; flex-wrap: wrap;}
+.hairInputArea fieldset > ul > li .radioArea input[type="radio"] + label{background-color: white;}
+.hairInputArea fieldset > ul > li .radioArea input[type="radio"]:checked + label{border-color: #7e00ff;}
+.hairInputArea fieldset > ul > li .radioArea input[type="radio"] + label:not(:last-of-type){margin-right: 0.870em;}
+.hairInputArea fieldset > ul > li .radioArea.lineBreak  input[type="radio"] + label{flex-basis: calc(25% - 0.870em);}
+.hairInputArea fieldset > ul > li .radioArea.lineBreak  input[type="radio"] + label:nth-of-type(4){margin-right: 0;}
+.hairInputArea fieldset > ul > li .radioArea.lineBreak  input[type="radio"] + label:nth-last-of-type(n + 5){margin-bottom: 0.565em;}
 .hairInputArea fieldset > ul > li input[type="checkbox"] + label{width: 100%; font-size: 1.438em; font-weight: 600; display: flex; align-items: center;}
 .hairInputArea fieldset > ul > li input[type="checkbox"] + label:not(:last-of-type){margin-bottom: 1em;}
 .hairInputArea fieldset > ul > li input[type="checkbox"] + label::before{content: ''; width:1.609em; height: 1.609em; background-image: url('../images/checkboxIcon01.png'); background-repeat: no-repeat; background-size: cover; margin-right: 0.783em;}
@@ -138,6 +140,41 @@
 .hospitalArea > div > .subMenuArea ul{justify-content: space-around;}
 .bannerArea{width: 100%; max-width: 600px; height: 11.063em; margin: 0 auto;  line-height: 0; border-radius: 50px; overflow: hidden;}
 .bannerArea img{width: 100%;}
-.hospitalArea > div > *:not(.bannerArea){width: 100%; max-width: 600px; margin-left: auto; margin-right: auto; padding-right: 20px; padding-left: 20px; box-sizing: border-box;}
+/* .hospitalArea > div > *:not(.bannerArea){width: 100%; max-width: 600px; margin-left: auto; margin-right: auto; padding-right: 20px; padding-left: 20px; box-sizing: border-box;} */
 .hospitalArea > div button{font-size:1em; }
 .hospitalArea > div button::before{width: 1.182em; height: 1.182em;}
+
+
+/* 진단결과 */
+.diagnosisResultArea > div{background-color: #f2f2f2; padding-bottom: 6.875em;}
+.diagnosisResultArea > div div.timeArea{line-height: 3.750em; display: flex; justify-content: space-between; align-items: center;}
+.diagnosisResultArea > div div.timeArea time{font-size: 1.625em; font-weight: 700;}
+.diagnosisResultArea > div div.timeArea time span{font-weight: 700;}
+.diagnosisResultArea > div div.timeArea .calendarBtn{width: 2.625em; height: 2.250em; background: url('../images/calendarIcon.png') no-repeat center / cover;}
+.diagnosisResultArea > div div.slider{width: 100%; max-width: 640px; height: 50.000em; background-color: lemonchiffon; margin: 0 auto 3.750em; position: relative;}
+.diagnosisResultArea > div div.slider .hairlineArea{position: absolute; left: 0; bottom: 0; width: 100%; height: 5.625em; padding: 0 20px; background-color: rgba(0,0,0,0.8); box-sizing: border-box;}
+.diagnosisResultArea > div div.slider .hairlineArea div{height: 100%; display: flex; justify-content: center; align-items: center;}
+.diagnosisResultArea > div div.slider .hairlineArea div button{text-indent: 0; font-size: 1.375em; font-weight: 700; display: flex; align-items: center; }
+.diagnosisResultArea > div div.slider .hairlineArea div button:nth-of-type(1){color: white; margin-right: auto;}
+.diagnosisResultArea > div div.slider .hairlineArea div button:nth-of-type(1)::after{content: ''; display: inline-block; width: 1.261em; height: 1.261em; background: url('../images/exclamationMarkBtn.png') no-repeat center / cover; margin-left: 0.682em;}
+.diagnosisResultArea > div div.slider .hairlineArea div button:nth-of-type(2)::before , .diagnosisResultArea > div div.slider .hairlineArea div button:nth-of-type(3)::before
+{content: ''; display: inline-block; width: 3.864em; height: 0.364em; border-radius: 50px; margin-right: 0.909em;}
+.diagnosisResultArea > div div.slider .hairlineArea div button:nth-of-type(2){color: #00ff00;}
+.diagnosisResultArea > div div.slider .hairlineArea div button:nth-of-type(2)::before{background-color:#00ff00;}
+.diagnosisResultArea > div div.slider .hairlineArea div button:nth-of-type(3){color:#55d1ff;  margin-left: auto;}
+.diagnosisResultArea > div div.slider .hairlineArea div button:nth-of-type(3)::before{background-color:#55d1ff;}
+.diagnosisResultArea > div div.compare{background-color: white; border-radius: 25px;} 
+.diagnosisResultArea > div div.compare ul{display: flex; flex-wrap: wrap; padding-top: 1.250em; padding-bottom: 1.250em;}
+.diagnosisResultArea > div div.compare ul li{width: calc((100% - 1.250em) / 2); padding: 1em 1.250em 0.750em; display: flex; flex-wrap: wrap; align-content: center; justify-content: space-between; border: 1px solid #eaeaea; border-radius: 15px; box-sizing: border-box; }
+.diagnosisResultArea > div div.compare ul li:nth-of-type(2n + 1){margin-right: 1.250em;}
+.diagnosisResultArea > div div.compare ul li:nth-last-of-type(n + 3){margin-bottom: 1.250em;}
+.diagnosisResultArea > div div.compare ul li strong{font-size:1.250em; font-weight: 700; }
+.diagnosisResultArea > div div.compare ul li button{width: 1.813em; height: 1.813em; background-image: url('../images/questionMarkBtn02.png'); background-repeat: no-repeat; background-position: center; background-size: cover;}
+.diagnosisResultArea > div div.compare ul li p{width: 100%; font-size: 1.438em; font-weight: 700; color: #6e6e6e;}
+.diagnosisResultArea > div div.compare ul li p span{display: inline-block; font-size: 0.870em; font-weight: 900; color: #7e00ff; width: 2.750em; line-height: 1.500em; text-align: center; border: 2px solid #d8b2ff; border-radius: 15px; }
+.diagnosisResultArea > div div.compare ul li.active{background-color: #7e00ff;}
+.diagnosisResultArea > div div.compare ul li.active strong{color: #ffe762;}
+.diagnosisResultArea > div div.compare ul li.active button{background-image: url('../images/questionMarkBtn01.png');}
+.diagnosisResultArea > div div.compare ul li.active p{color: white;}
+.diagnosisResultArea > div div.compare ul li.active p span{color: #ffe762; border-color: #ffe762;}
+/* 진단결과 fin*/

@@ -6,7 +6,9 @@
     26px = 1.625em
     30px = 1.875em
     36px = 2.250em
+    40px = 2.500em
     43px = 2.688em
+    60px = 3.750em
 */
 /* 공통 */
 .wrap{
@@ -30,7 +32,7 @@ mark{color:#7e00ff;  background-color: transparent;}
 .popupArea > div button.popupCloseBtn{width: 1.438em; height: 1.438em; text-indent: -9999px; background: url('../images/XIcon.png') no-repeat center / cover; position: absolute; }
 
 .QnAArea, .hospitalArea{height: 100vh; padding: 7.125em 0 7.500em; box-sizing: border-box;}
-.QnADetailArea{padding: 7.125em 0 7.500em; box-sizing: border-box;}
+.QnADetailArea,.diagnosisResultArea{padding: 7.125em 0 7.500em; box-sizing: border-box;}
 /* 답변 */
 .answer{font-size: 1.250em; color: #7e00ff; font-weight: 700; width: 5.250em; height: 2.000em; border:2px solid #7e00ff; border-radius: 25px; background-color: white; display: flex; justify-content: center; align-items: center; box-sizing: border-box;}
 .answer::after{content: '중';}
@@ -46,11 +48,16 @@ mark{color:#7e00ff;  background-color: transparent;}
 .subMenuArea .subMenuBar{position: absolute; bottom: 0; height: 5px; background-color: #7e00ff;}
 
 /* input */
-input ,
-input[type="radio"] + label
+input ,.tabBtnArea li
 {flex: 1; font-size: 1.438em; font-weight: 600; height: 2.652em; border-radius: 30px; box-sizing: border-box; display: flex; justify-content: center; align-items: center;}
 input[type="text"]{padding: 0 1.522em;}
 input[type="text"]::placeholder{color: black;}
+
+/* 탭 버튼 */
+.tabBtnArea{display: flex; flex-wrap: wrap; position: relative; width: 100%; margin-bottom: 2.500em;}
+.tabBtnArea li{background-color: white; flex: 1; border: 2px solid transparent;}
+.tabBtnArea li.active{border-color: #7e00ff;}
+.tabBtnArea li:not(:last-of-type){margin-right: 0.870em;}
 
 ul.test{flex: 1; overflow-y: auto; margin-bottom: 3.125em;}
 ul.test li div.testBox{display: flex; flex-wrap: wrap; justify-content: flex-start; padding: 1.875em 0 1.875em; border-bottom: 1px solid #9f9f9f;}
