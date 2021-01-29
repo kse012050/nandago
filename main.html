@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>메인 - 난다고</title>
+    <!-- swiper slider -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="css/import.css">
 </head>
 <body>
@@ -106,8 +109,21 @@
                         <li>전체 </li>
                     </ul>
                 </section>
-                <div>
-                    <!-- 베너 -->
+                <div class="bannerArea">
+                    <div class="swiper-container bannerSlider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="images/bannerImg.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/bannerImg.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/bannerImg.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
                 </div>
                 <section>
                     <h3>최근 진단결과</h3>
@@ -145,7 +161,22 @@
                     <h3>진단이력</h3>
                     <button></button>
                     <div>
-
+                        <div class="swiper-container mainRecordSlider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="images/mainSliderImg01.png" alt="">
+                                    <time><span>2020</span><span>02</span><span>01</span></time>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/mainSliderImg02.png" alt="">
+                                    <time><span>2020</span><span>02</span><span>01</span></time>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/mainSliderImg03.png" alt="">
+                                    <time><span>2020</span><span>02</span><span>01</span></time>
+                                </div>
+                            </div>
+                          </div>
                     </div>
                 </section>
             </div>
@@ -196,5 +227,19 @@
             </ul>
         </nav>
     </div>
+
+    <script>
+        var swiper = new Swiper('.mainRecordSlider', {
+            slidesPerView: 3,
+            spaceBetween: 20,
+        });
+        var swiper = new Swiper('.bannerSlider', {
+            pagination: {
+                el: '.bannerSlider .swiper-pagination',
+                clickable: true,
+            },
+        });
+        
+    </script>
 </body>
 </html>

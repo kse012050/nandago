@@ -24,7 +24,17 @@
 .mainArea > div section div.progressArea div.percentage > div > div > div{text-indent: -9999px; position: absolute; left: 0; top: 0; height: 100%; width: 30%; background-color: black; border-radius: 50px;}
 .mainArea > div section:nth-of-type(1) > div{padding:0 1.250em 2.500em;;}
 .mainArea > div section:nth-of-type(2) > div img{width: 100%;}
+.mainArea > div div.bannerArea{}
+.mainArea > div div.bannerArea .bannerSlider .swiper-pagination{text-align: left; left: 2.500em; bottom: 1.750em;}
+.mainArea > div div.bannerArea .bannerSlider .swiper-pagination .swiper-pagination-bullet{width: 0.750em; height: 0.750em; background-color: white; opacity: 1; transition-duration: 0.5s; transition-property: width ,border-radius;}
+.mainArea > div div.bannerArea .bannerSlider .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active{width: 2.000em; border-radius: 10px;}
 .mainArea > div section:nth-of-type(3) > div{padding: 1.875em 2.500em;}
+.mainArea > div section:nth-of-type(4) > div{padding: 2.500em 1.250em;}
+.mainArea > div section:nth-of-type(4) > div .mainRecordSlider{padding: 0 2.250em;}
+.mainArea > div section:nth-of-type(4) > div .mainRecordSlider .swiper-slide img{ width: 100%; margin-bottom: 0.938em;}
+.mainArea > div section:nth-of-type(4) > div .mainRecordSlider .swiper-slide time{display: block; font-size: 1.375em; font-weight: 900; text-align: center;}
+.mainArea > div section:nth-of-type(4) > div .mainRecordSlider .swiper-slide time span{font-weight: 900;}
+.mainArea > div section:nth-of-type(4) > div .mainRecordSlider .swiper-slide time span:not(:first-of-type)::before{content: '/';}
 
 
 
@@ -165,8 +175,6 @@
 .hospitalArea > div{display: flex; flex-direction: column; height: 100%;}
 .hospitalArea > div > .subMenuArea{margin-bottom: 2.500em;}
 .hospitalArea > div > .subMenuArea ul{justify-content: space-around;}
-.bannerArea{width: 100%; max-width: 600px; height: 11.063em; margin: 0 auto;  line-height: 0; border-radius: 50px; overflow: hidden;}
-.bannerArea img{width: 100%;}
 /* .hospitalArea > div > *:not(.bannerArea){width: 100%; max-width: 600px; margin-left: auto; margin-right: auto; padding-right: 20px; padding-left: 20px; box-sizing: border-box;} */
 .hospitalArea > div button{font-size:1em; }
 .hospitalArea > div button::before{width: 1.182em; height: 1.182em;}

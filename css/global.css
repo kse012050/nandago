@@ -21,7 +21,7 @@
         font-size: 2.5vw;
     }
 }
-.contentsWidth{max-width: 600px; margin: 0 auto; padding: 0 20px; box-sizing: border-box;}
+.contentsWidth{max-width: 600px; margin: 0 auto; padding: 0 20px;}
 mark{color:#7e00ff;  background-color: transparent;}
 .underline{position: relative;}
 .underline::after{content: ''; position: absolute; left: 0; bottom: 0; width: 100%; }
@@ -45,7 +45,7 @@ mark{color:#7e00ff;  background-color: transparent;}
 .subMenuArea{width: 100%; padding-top: 4.250em; position: relative;}
 .subMenuArea ul{display: flex;  padding-bottom: 1.250em; border-bottom: 1px solid #a3a3a3;}
 .subMenuArea ul li{font-size: 1.625em; font-weight: 900;}
-.subMenuArea .subMenuBar{position: absolute; bottom: 0; height: 5px; background-color: #7e00ff;}
+.subMenuArea .subMenuBar{position: absolute; bottom: -2px; height: 5px; background-color: #7e00ff; transition-duration: 0.5s; transition-property: left, width;}
 
 /* input */
 input ,.tabBtnArea li
@@ -58,6 +58,10 @@ input[type="text"]::placeholder{color: black;}
 .tabBtnArea li{background-color: white; flex: 1; border: 2px solid transparent;}
 .tabBtnArea li.active{border-color: #7e00ff;}
 .tabBtnArea li:not(:last-of-type){margin-right: 0.870em;}
+
+/* 베너 */
+.bannerArea{width: 100%; max-width: 600px; height: 11.063em; margin: 0 auto;  line-height: 0; border-radius: 15px; overflow: hidden;}
+.bannerArea img{width: 100%;}
 
 ul.test{flex: 1; overflow-y: auto; margin-bottom: 3.125em;}
 ul.test li div.testBox{display: flex; flex-wrap: wrap; justify-content: flex-start; padding: 1.875em 0 1.875em; border-bottom: 1px solid #9f9f9f;}
@@ -171,7 +175,7 @@ header > div .popupArea > div.noticePopupArea .noticeControlsBtn div.underline::
 /* 해더 fin*/
 
 /* 하단 메뉴 */
-.wrap > nav{position: fixed; left: 0; bottom: 0; width: 100%;  background-color: #7e00ff;}
+.wrap > nav{position: fixed; left: 0; bottom: 0; width: 100%;  background-color: #7e00ff; z-index: 10;}
 .wrap > nav ul{display: flex;}
 .wrap > nav ul li{flex: 1;  display: flex; justify-content: space-between; align-items: center;}
 .wrap > nav ul li a{ font-size: 1.250em; color: #b388ff; width: 100%; padding:1.100em 0 1.100em 0; display: flex; flex-direction: column; justify-content: center; align-items: center;}
