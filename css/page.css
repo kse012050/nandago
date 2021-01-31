@@ -5,7 +5,7 @@
 /* 메인 */
 .mainArea{background-color: #f0f0f0;}
 .mainArea > div{padding-top: 0.625em;padding-bottom: 5.000em;}
-.mainArea > div > *{margin-bottom: 3.750em;}
+.mainArea > div > *:not(:last-child){margin-bottom: 3.750em;}
 .mainArea > div section h3{font-size: 1.625em; font-weight: 900; margin-bottom:0.769em; padding: 0 0.769em;}
 .mainArea > div section > div{background-color: white; border-radius: 25px; margin-bottom: 1.538em;}
 .mainArea > div section div.progressArea{height:30.000em; display: flex; flex-direction: column; justify-content: space-between; box-sizing: border-box;}
@@ -31,18 +31,17 @@
 .mainArea > div div.bannerArea .bannerSlider .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active{width: 2.000em; border-radius: 10px;}
 /* 메인 베너  fin*/
 .mainArea > div section.mainDiagnosisResultArea > div{padding: 1.875em 2.500em;}
-.mainArea > div section.mainDiagnosisHistoryArea > div{padding: 2.500em 1.250em;}
-.mainArea > div section.mainDiagnosisHistoryArea > div .mainRecordSlider{padding: 0 2.250em;}
+.mainArea > div section.mainDiagnosisHistoryArea{position: relative;}
+.mainArea > div section.mainDiagnosisHistoryArea > button.sortBtn{position: absolute; right: 0.769em; top: -0.313em; width: 2.250em; height: 2.250em; background: url('../images/sortIcon01.png') no-repeat center / cover;}
+.mainArea > div section.mainDiagnosisHistoryArea > div{padding: 2.500em 3.438em;}
 .mainArea > div section.mainDiagnosisHistoryArea > div .mainRecordSlider .swiper-slide img{ width: 100%; margin-bottom: 0.938em;}
 .mainArea > div section.mainDiagnosisHistoryArea > div .mainRecordSlider .swiper-slide time{display: block; font-size: 1.375em; font-weight: 900; text-align: center;}
 .mainArea > div section.mainDiagnosisHistoryArea > div .mainRecordSlider .swiper-slide time span{font-weight: 900;}
 .mainArea > div section.mainDiagnosisHistoryArea > div .mainRecordSlider .swiper-slide time span:not(:first-of-type)::before{content: '/';}
-.mainArea > div section.mainDiagnosisHistoryArea > div .mainRecordSlider .swiper-button-next,
-.mainArea > div section.mainDiagnosisHistoryArea > div .mainRecordSlider .swiper-button-prev{color: black; font-size: 1em; width: auto;}
-.mainArea > div section.mainDiagnosisHistoryArea > div .mainRecordSlider .swiper-button-next::after,
-.mainArea > div section.mainDiagnosisHistoryArea > div .mainRecordSlider .swiper-button-prev::after{font-size: 2.5em;}
-.mainArea > div section.mainDiagnosisHistoryArea > div .mainRecordSlider .swiper-button-next{right: 0;}
-.mainArea > div section.mainDiagnosisHistoryArea > div .mainRecordSlider .swiper-button-prev{left: 0;}
+.mainArea > div section.mainDiagnosisHistoryArea > div .swiper-button-next,
+.mainArea > div section.mainDiagnosisHistoryArea > div .swiper-button-prev{color: black; font-size: 1em; width: auto;}
+.mainArea > div section.mainDiagnosisHistoryArea > div .swiper-button-next::after,
+.mainArea > div section.mainDiagnosisHistoryArea > div .swiper-button-prev::after{font-size: 2.5em;}
 /* 메인 fin*/
 
 

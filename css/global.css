@@ -143,7 +143,6 @@ header > div .popupArea > div.searcPopupArea ul li:not(:last-of-type){margin-rig
 
 /* 해더 팝업 - 검색 결과 */
 .searchResultsArea{position: fixed; top: 7.125em; left: 0; width: 100%; height: calc(100vh - 7.125em); box-sizing: border-box; padding-top: 4.250em; background-color: white; z-index: 100;}
-.searchResultsArea > div{}
 .searchResultsArea > div > p{font-size: 2.250em; margin-bottom: 0.417em;}
 .searchResultsArea > div > p span{display: inline-block; height: 100%;}
 .searchResultsArea > div > p span.underline{padding-bottom: 0.333em; position: relative;}
@@ -187,7 +186,6 @@ header > div .popupArea > div.noticePopupArea .noticeControlsBtn div.underline::
 .wrap > nav ul li a div{ width: 2.450em; height: 2.100em; margin-bottom: 0.750em;}
 .wrap > nav ul li a div img{width: 100%;}
 .wrap > nav ul li:nth-of-type(3) a{color: white; position: relative;}
-.wrap > nav ul li:nth-of-type(3) a::after{    content: ''; position: absolute; bottom: 1.800em; left: -0.200em; width: 6.000em; height: 5.600em; background-color: #7e00ff; border-radius: 100%; z-index: -1;}
-.wrap > nav ul li:nth-of-type(3) a div{}
+.wrap > nav ul li:nth-of-type(3) a::after{    content: ''; position: absolute; bottom: 1.800em; left: -0.05em; width: 6.000em; height: 5.600em; background-color: #7e00ff; border-radius: 100%; z-index: -1;}
 .wrap > nav ul li:nth-of-type(3) a div img{transform: scale(1.45);transform-origin: bottom;}
 /* 하단 메뉴 fin */
