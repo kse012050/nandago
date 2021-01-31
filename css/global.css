@@ -62,6 +62,7 @@ input[type="text"]::placeholder{color: black;}
 /* 베너 */
 .bannerArea{width: 100%; max-width: 600px; height: 11.063em; margin: 0 auto;  line-height: 0; border-radius: 15px; overflow: hidden;}
 .bannerArea img{width: 100%;}
+/* 베너 fin*/
 
 ul.test{flex: 1; overflow-y: auto; margin-bottom: 3.125em;}
 ul.test li div.testBox{display: flex; flex-wrap: wrap; justify-content: flex-start; padding: 1.875em 0 1.875em; border-bottom: 1px solid #9f9f9f;}
@@ -92,9 +93,13 @@ button.speechBubblePlusIcon::before
 {content: ''; width: 1.000em; height: 1.000em; margin-right: 0.273em; background-repeat: no-repeat; background-position: center; background-size: cover;}
 button.speechBubbleIcon::before{background-image: url('../images/speechBubbleIcon.png');}
 button.speechBubblePlusIcon::before{background-image: url('../images/speechBubblePlusIcon.png');}
+/* 말풍선 버튼 fin*/
 
 /* 뒤로가기 버튼 */
 .backArrowBtn{width: 1.233em; height: 0.814em; background: url('../images/backArrowBtn.png') no-repeat center center / cover; margin-right: 0.535em;}
+/* 뒤로가기 버튼 fin*/
+
+/* 공통 fin*/
 
 /* 해더 */
 header{width: 100%; height: 7.125em; background-color: #f2f2f2; position: fixed; left: 0; top: 0; z-index: 100;}
@@ -109,7 +114,6 @@ header > div > button.searcPopuphBtn{background-image: url('../images/searchIcon
 header > div > button.noticePopupBtn{position: relative; background-image: url('../images/noticeIcon.png')}
 header > div > button.noticePopupBtn span{font-size:1em; font-weight: 900; color: white;  position: absolute; right: -0.813em; top: -0.813em; width: 1.688em; height: 1.688em; display: flex; justify-content: center; align-items: center; border: 3px solid #f2f2f2; border-radius: 100%; background-color: #7e00ff; text-indent: 0;}
 /* 진단촬영 해더 */
-.diagnosticImaging header{}
 .diagnosticImaging header > div > button{display: flex; align-items: center;}
 .diagnosticImaging header > div > button.backArrowBtn{font-size: 2.688em;}
 .diagnosticImaging header > div > button.exclamationBtn{text-indent: 0; font-size: 1.375em; font-weight: 700; padding-bottom: 0.318em; position: relative;}
@@ -136,6 +140,7 @@ header > div .popupArea > div.searcPopupArea ul li{font-size: 1.500em; color: #7
 header > div .popupArea > div.searcPopupArea ul li::after{content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 2px; background-color:#777777;}
 header > div .popupArea > div.searcPopupArea ul li:not(:last-of-type){margin-right:1em; }
 /* 해더 팝업 - 검색 팝업 fin */
+
 /* 해더 팝업 - 검색 결과 */
 .searchResultsArea{position: fixed; top: 7.125em; left: 0; width: 100%; height: calc(100vh - 7.125em); box-sizing: border-box; padding-top: 4.250em; background-color: white; z-index: 100;}
 .searchResultsArea > div{}
@@ -147,7 +152,7 @@ header > div .popupArea > div.searcPopupArea ul li:not(:last-of-type){margin-rig
 .searchResultsArea > div > ul li{padding: 3.438em 0 2.813em; border-bottom: 1px solid #a3a3a3;}
 .searchResultsArea > div > ul li strong{display: inline-block; font-size: 1.625em; font-weight: 900; margin-bottom: 0.577em;}
 .searchResultsArea > div > ul li p{font-size: 1.438em; line-height: 1.4782;}
-
+/* 해더 팝업 - 검색 결과 fin*/
 
 /* 해더 팝업 - 알림 팝업 */
 header > div .popupArea > div.noticePopupArea{height: 46.875em; padding-bottom: 2.813em; display: flex; flex-direction: column;}
@@ -171,8 +176,8 @@ header > div .popupArea > div.noticePopupArea .noticeControlsBtn div{font-size: 
 header > div .popupArea > div.noticePopupArea .noticeControlsBtn div span:first-of-type::after{content: '/';}
 header > div .popupArea > div.noticePopupArea .noticeControlsBtn div.underline::after{height: 1px; background-color: black;}
 /* 해더 팝업 - 알림 팝업 fin*/
-
 /* 해더 fin*/
+
 
 /* 하단 메뉴 */
 .wrap > nav{position: fixed; left: 0; bottom: 0; width: 100%;  background-color: #7e00ff; z-index: 10;}

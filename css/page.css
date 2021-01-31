@@ -22,29 +22,31 @@
 .mainArea > div section div.progressArea div.percentage > div dl dd mark::after{content: '%'; }
 .mainArea > div section div.progressArea div.percentage > div > div{width: 100%; height: 0.750em; background-color: #f2f2f2; border-radius: 50px; position: relative; }
 .mainArea > div section div.progressArea div.percentage > div > div > div{text-indent: -9999px; position: absolute; left: 0; top: 0; height: 100%; width: 30%; background-color: black; border-radius: 50px;}
-.mainArea > div section:nth-of-type(1) > div{padding:0 1.250em 2.500em;;}
-.mainArea > div section:nth-of-type(2) > div img{width: 100%;}
-.mainArea > div div.bannerArea{}
+.mainArea > div section.mainWeatherMapArea > div{padding:0 1.250em 2.500em;;}
+.mainArea > div section.mainPeriodArea > div img{width: 100%;}
+.mainArea > div section.mainPeriodArea h3{display: none;}
+/* 메인 베너  */
 .mainArea > div div.bannerArea .bannerSlider .swiper-pagination{text-align: left; left: 2.500em; bottom: 1.750em;}
 .mainArea > div div.bannerArea .bannerSlider .swiper-pagination .swiper-pagination-bullet{width: 0.750em; height: 0.750em; background-color: white; opacity: 1; transition-duration: 0.5s; transition-property: width ,border-radius;}
 .mainArea > div div.bannerArea .bannerSlider .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active{width: 2.000em; border-radius: 10px;}
-.mainArea > div section:nth-of-type(3) > div{padding: 1.875em 2.500em;}
-.mainArea > div section:nth-of-type(4) > div{padding: 2.500em 1.250em;}
-.mainArea > div section:nth-of-type(4) > div .mainRecordSlider{padding: 0 2.250em;}
-.mainArea > div section:nth-of-type(4) > div .mainRecordSlider .swiper-slide img{ width: 100%; margin-bottom: 0.938em;}
-.mainArea > div section:nth-of-type(4) > div .mainRecordSlider .swiper-slide time{display: block; font-size: 1.375em; font-weight: 900; text-align: center;}
-.mainArea > div section:nth-of-type(4) > div .mainRecordSlider .swiper-slide time span{font-weight: 900;}
-.mainArea > div section:nth-of-type(4) > div .mainRecordSlider .swiper-slide time span:not(:first-of-type)::before{content: '/';}
-.mainArea > div section:nth-of-type(4) > div .mainRecordSlider .swiper-button-next,
-.mainArea > div section:nth-of-type(4) > div .mainRecordSlider .swiper-button-prev{color: black; font-size: 1em; width: auto;}
-.mainArea > div section:nth-of-type(4) > div .mainRecordSlider .swiper-button-next::after,
-.mainArea > div section:nth-of-type(4) > div .mainRecordSlider .swiper-button-prev::after{font-size: 2.5em;}
-.mainArea > div section:nth-of-type(4) > div .mainRecordSlider .swiper-button-next{right: 0;}
-.mainArea > div section:nth-of-type(4) > div .mainRecordSlider .swiper-button-prev{left: 0;}
+/* 메인 베너  fin*/
+.mainArea > div section.mainDiagnosisResultArea > div{padding: 1.875em 2.500em;}
+.mainArea > div section.mainDiagnosisHistoryArea > div{padding: 2.500em 1.250em;}
+.mainArea > div section.mainDiagnosisHistoryArea > div .mainRecordSlider{padding: 0 2.250em;}
+.mainArea > div section.mainDiagnosisHistoryArea > div .mainRecordSlider .swiper-slide img{ width: 100%; margin-bottom: 0.938em;}
+.mainArea > div section.mainDiagnosisHistoryArea > div .mainRecordSlider .swiper-slide time{display: block; font-size: 1.375em; font-weight: 900; text-align: center;}
+.mainArea > div section.mainDiagnosisHistoryArea > div .mainRecordSlider .swiper-slide time span{font-weight: 900;}
+.mainArea > div section.mainDiagnosisHistoryArea > div .mainRecordSlider .swiper-slide time span:not(:first-of-type)::before{content: '/';}
+.mainArea > div section.mainDiagnosisHistoryArea > div .mainRecordSlider .swiper-button-next,
+.mainArea > div section.mainDiagnosisHistoryArea > div .mainRecordSlider .swiper-button-prev{color: black; font-size: 1em; width: auto;}
+.mainArea > div section.mainDiagnosisHistoryArea > div .mainRecordSlider .swiper-button-next::after,
+.mainArea > div section.mainDiagnosisHistoryArea > div .mainRecordSlider .swiper-button-prev::after{font-size: 2.5em;}
+.mainArea > div section.mainDiagnosisHistoryArea > div .mainRecordSlider .swiper-button-next{right: 0;}
+.mainArea > div section.mainDiagnosisHistoryArea > div .mainRecordSlider .swiper-button-prev{left: 0;}
+/* 메인 fin*/
 
 
-
-/* login page */
+/* 로그인 */
 .wrap .loginArea{height: 100vh;min-height: 71em;background: url(../images/loginBG.png) no-repeat center / cover;}
 .wrap .loginArea{padding: 5em 2.5em 2.813em;box-sizing: border-box;display: flex;flex-direction: column;justify-content: flex-end;text-align: center;}
 .wrap .loginArea h1{font-size: 1.938em;font-weight: 400;color: white;letter-spacing: -1px;margin-bottom: auto;}
@@ -61,9 +63,9 @@
 .wrap .loginArea > a{position: relative; font-size: 1.375em; color: white; margin-bottom: 1.818em; padding-bottom: 0.09091em; padding-right: 1.364em; border-bottom: 1px solid rgba(255,255,255,0.5); align-self: center;}
 .wrap .loginArea > a span{position: absolute; right: 0; top: 0px; font-size: 1.25em;}
 .wrap .loginArea p{font-size: 1.25em; color: rgba(255,255,255,0.4);}
-/* login page fin*/
+/* 로그인 fin*/
 
-/* hairInput 내 탈보 정보 입력*/
+/* 내 탈보 정보 입력 */
 .hairInputArea{background-color: #f2f2f2; padding-top: 2.500em; padding-bottom: 3.750em;}
 .hairInputArea fieldset legend{font-size: 2.688em; font-weight: 900; margin-bottom: 1.395em;}
 .hairInputArea fieldset > ul > li{display: flex; flex-wrap: wrap; position: relative;}
@@ -80,7 +82,6 @@
 .hairInputArea fieldset > ul > li .radioArea input[type="radio"] + label
 {border: 2px solid transparent; }
 .hairInputArea fieldset > ul > li input[type="text"]{border: none;}
-
 .hairInputArea fieldset > ul > li .radioArea input[type="radio"],
 .hairInputArea fieldset > ul > li input[type="checkbox"]
 {display: none}
@@ -96,6 +97,7 @@
 .hairInputArea fieldset > ul > li input[type="checkbox"] + label::before{content: ''; width:1.609em; height: 1.609em; background-image: url('../images/checkboxIcon01.png'); background-repeat: no-repeat; background-size: cover; margin-right: 0.783em;}
 .hairInputArea fieldset > ul > li input[type="checkbox"]:checked + label::before{background-image: url('../images/checkboxIcon02.png');}
 .hairInputArea fieldset input[type="submit"]{font-size: 1.438em; font-weight: 600; width: 7.739em; height: 2.652em; border: none; border-radius: 30px; display: block; margin: 0 auto; color: white; background-color: #7e00ff;}
+/* 내 탈보 정보 입력 fin*/
 
 /* hairInput 내 탈보 정보 입력 - 팝업 공통*/
 .hairInputArea fieldset .popupArea{justify-content: center; align-items: center;}
@@ -105,18 +107,22 @@
 .hairInputArea fieldset .popupArea > div h4{width: 100%; font-size: 1.875em; font-weight: 900; padding-top: 1.833em;}
 .hairInputArea fieldset .popupArea > div{position: relative;}
 .hairInputArea fieldset .popupArea > div button.popupCloseBtn{right: 2.375em; top: 3.438em;}
-
 .hairInputArea fieldset .popupArea .userHairPartPopupArea h4{margin-bottom: 2.900em;}
 .hairInputArea fieldset .popupArea .userHairTypePopupArea h4{margin-bottom: 1.667em;}
+/* hairInput 내 탈보 정보 입력 - 팝업 공통 fin*/
+
 
 /* 탈모부위 팝업 */
 .hairInputArea fieldset .popupArea > div img{float: left; width: 50%;}
+/* 탈모부위 팝업 fin*/
+
 
 /* 투피타입 팝업 */
 .hairInputArea fieldset .popupArea ul li{font-size: 1.438em; line-height: 1.4782;}
 .hairInputArea fieldset .popupArea ul li strong{font-weight: 900;}
 .hairInputArea fieldset .popupArea ul li strong::before{content: ':'; display: inline-block;}
 .hairInputArea fieldset .popupArea ul li:not(:last-of-type){margin-bottom: 1.739em;}
+/* 투피타입 팝업 fin*/
 
 
 /* Q&A */
@@ -125,24 +131,7 @@
 .QnAArea > div .subMenuArea{margin-bottom: 1.2500em;}
 .QnAArea > div .subMenuArea ul{justify-content: space-between;}
 .QnAArea > div > ul{flex: 1; overflow-y: auto; margin-bottom: 3.125em;}
-/* .QnAArea > div > ul li{display: flex; flex-wrap: wrap; justify-content: flex-start; padding: 1.875em 0 2.500em; border-bottom: 1px solid #9f9f9f;}
-.QnAArea > div > ul li div:nth-of-type(1){width: 6.750em; height: 6.750em; line-height: 0; margin-right: 1.688em; position: relative;}
-.QnAArea > div > ul li div:nth-of-type(1) .answer{position: absolute; left: -1em; top: -1.100em; }
-.QnAArea > div > ul li div:nth-of-type(1) img{width: 100%;} */
-/* .QnAArea > div > ul li div:nth-of-type(2){flex: 1; display: flex; flex-direction: column; justify-content: space-around; }
-.QnAArea > div > ul li div:nth-of-type(2) p{display: flex; align-items: center;}
-.QnAArea > div > ul li div:nth-of-type(2) p strong{display: inline-block; font-size: 0.957em; margin-right: 0.909em;}
-.QnAArea > div > ul li div:nth-of-type(2) p:nth-of-type(1){font-size: 1.438em; font-weight: 900;}
-.QnAArea > div > ul li div:nth-of-type(2) p:nth-of-type(1) strong{font-weight: 900;}
-.QnAArea > div > ul li div:nth-of-type(2) p:nth-of-type(2){font-size: 1.375em;}
-.QnAArea > div > ul li div:nth-of-type(2) p:nth-of-type(2) strong{font-weight: 700;}
-.QnAArea > div > ul li div:nth-of-type(2) p:nth-of-type(2) span:not(:last-of-type)::after{content: '/';} */
 .QnAArea > div > ul li div:nth-of-type(3){width: 100%; padding-left: 8.438em; display: flex; margin-top: 1em;}
-/* .QnAArea > div > ul li div:nth-of-type(3) button{text-indent: 0; font-size: 1.375em; display: flex; align-items: center;}
-.QnAArea > div > ul li div:nth-of-type(3) button:not(:last-of-type){margin-right: 1.364em;}
-.QnAArea > div > ul li div:nth-of-type(3) button::before{content: ''; width: 1.000em; height: 1.000em; margin-right: 0.273em; background-repeat: no-repeat; background-position: center; background-size: cover;}
-.QnAArea > div > ul li div:nth-of-type(3) button.speechBubbleIcon::before{background-image: url('../images/speechBubbleIcon.png');}
-.QnAArea > div > ul li div:nth-of-type(3) button.speechBubblePlusIcon::before{background-image: url('../images/speechBubblePlusIcon.png');} */
 .QnAArea > div > button.writeBtn{width: 11.739em; display: block; margin: auto auto 0;}
 /* Q&A fin*/
 
@@ -168,6 +157,7 @@
 .upDownBtnArea button.upBtn ,.upDownBtnArea button.downBtn{width: 1.250em; height: 1.250em; background-repeat: no-repeat; background-position: center; background-size: cover;}
 .upDownBtnArea button.upBtn{background-image: url('../images/upIcon.png')}
 .upDownBtnArea button.downBtn{background-image: url('../images/downIcon.png')}
+/* Q&A 상세페이지 up , down 버튼 fin*/
 .QnADetailArea > div select{display: block; margin-left: auto; font-size: 1.375em; font-weight: 700; width: 7.727em; height: 2.727em; padding: 0 0.909em; border-color: #d5d5d5; margin-bottom: 0.909em;}
 .QnADetailArea > div > .test{border-top: 1px solid #9f9f9f;}
 .QnADetailArea .test .answer{font-size: 0.870em; margin-right: 0.350em;}
@@ -175,16 +165,16 @@
 .QnADetailArea .writeArea{display: flex;}
 .QnADetailArea .writeArea input[type="text"]{flex: 1; border-color: #c3c3c3; border-style: solid; margin-right: 0.435em;}
 .QnADetailArea .writeArea button{width: 5.435em; color: #7e00ff; font-weight: 700;}
+/* Q&A 상세페이지 fin*/
 
 
 /* 병원 의사 */
 .hospitalArea > div{display: flex; flex-direction: column; height: 100%;}
 .hospitalArea > div > .subMenuArea{margin-bottom: 2.500em;}
 .hospitalArea > div > .subMenuArea ul{justify-content: space-around;}
-/* .hospitalArea > div > *:not(.bannerArea){width: 100%; max-width: 600px; margin-left: auto; margin-right: auto; padding-right: 20px; padding-left: 20px; box-sizing: border-box;} */
 .hospitalArea > div button{font-size:1em; }
 .hospitalArea > div button::before{width: 1.182em; height: 1.182em;}
-
+/* 병원 의사 fin*/
 
 
 
@@ -221,3 +211,17 @@
 .diagnosisResultArea > div div.compare ul li.active p{color: white;}
 .diagnosisResultArea > div div.compare ul li.active p span{color: #ffe762; border-color: #ffe762;}
 /* 진단결과 fin*/
+
+/* 진단촬영 */
+.photographyGuide{position: fixed; left: 0; width: 100%;}
+.photographyGuide p{font-size: 1.625em; font-weight: 700; width: 16.538em; height: 2.885em;  border-radius: 15px; display: flex; justify-content: center; align-items: center; margin: 0 auto;}
+.photographyGuide01{bottom: 10.313em; }
+.photographyGuide01 p{background-color: lavender;}
+.photographyGuide02{bottom: 15.000em;}
+.photographyGuide02 p{color: white; background-color: rgba(0,0,0,0.5);}
+.photographyGuide .photographyGuideBtnArea{width: 100%; display: flex; justify-content: center; position: absolute; top: 9.375em; left: 0; }
+.photographyGuide .photographyGuideBtnArea button{text-indent: 0; font-size: 1.438em; font-weight: 700; width: 7.739em; height: 2.609em; border: 2px solid #7e00ff; box-sizing: border-box; border-radius: 50px;}
+.photographyGuide .photographyGuideBtnArea button:not(:last-of-type){margin-right: 1.739em;}
+.photographyGuide .photographyGuideBtnArea button:nth-of-type(1){color: #7e00ff; background-color: white;}
+.photographyGuide .photographyGuideBtnArea button:nth-of-type(2){color: white; background-color: #7e00ff;}
+/* 진단촬영 fin*/
